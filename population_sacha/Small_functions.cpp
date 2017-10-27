@@ -24,7 +24,7 @@
 	#define SHELL_COPY_COMMAND "copy"
 //	#define DEFAULT_RESULTS_DIRECTORY ".//results//"
 	*/
-#elif __linux__
+#elif __linux__ || defined __APPLE__ || __APPLE__
 	#include"population_sacha/Log_steps.h"
 	/*
 	#include"dirent.h"

@@ -18,7 +18,7 @@
 // Platform-specific commands
 #ifdef _WIN32
 	#include"direntvc.h"
-#elif __linux__
+#elif __linux__ || defined __APPLE__ || __APPLE__
 	#include"dirent.h"
 #endif
 

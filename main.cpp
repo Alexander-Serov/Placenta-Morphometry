@@ -41,7 +41,7 @@
 	#define DIRECTORY_SEPARATOR_SEARCH "/\\"
 	#define SHELL_COPY_COMMAND "copy"
 //	#define DEFAULT_RESULTS_DIRECTORY ".//results//"
-#elif __linux__
+#elif __linux__ || defined __APPLE__ || __APPLE__
 	#include"dirent.h"
 	#include"unistd.h"
 	#define DIRECTORY_SEPARATOR "/"
@@ -52,7 +52,7 @@
 
 //using namespace cimg_library;
 //using namespace std; //std namespace // cin/cout // string
-using namespace pop; //Population namespace
+//using namespace pop; //Population namespace
 
 
 // Global constants
@@ -129,7 +129,7 @@ namespace {
 	
 	string fileCuttedImageInDir;
 	string str_img_In;
-	string lock;
+	std::string lock_new;
 	string resultFileDir;
 	string s_tmp;	
 
@@ -185,7 +185,7 @@ int main(int argc, char *argv[])
 			// Processing new images while there are some
 			pop::Mat2RGBUI8 img_input_image_color;
 			while (read_next_image(fileInDir, nbAllFiles, str_img_name_withoutExtension, str_img_In,
-				lock, extension, mainDir, resultDir, img_input_image_color, processed_a_new_picture)==true)
+				lock_new, extension, mainDir, resultDir, img_input_image_color, processed_a_new_picture)==true)
 			{
 
 								
@@ -232,16 +232,16 @@ int main(int argc, char *argv[])
 				
 				// Performing statistical measurements
 				// Check the images that are send to this function
-				statistics_placenta(img_3_objects, IVS_percentage_in_the_image, lock, tmpStr);
+				statistics_placenta(img_3_objects, IVS_percentage_in_the_image, lock_new, tmpStr);
 
 
 				// Creating a .finished file
 				create_dot_finished_file(resultDir, str_img_name_withoutExtension);
 
 
-				// Deleting the .lock file
-				copy(lock.begin(), lock.end(), tmpStr);
-				tmpStr[lock.size()] = '\0';
+				// Deleting the .lock_new file
+				copy(lock_new.begin(), lock_new.end(), tmpStr);
+				tmpStr[lock_new.size()] = '\0';
 				remove(tmpStr);
 
 				log_steps();		// End: "Processing image: " + str_img_name_withoutExtension + extension);

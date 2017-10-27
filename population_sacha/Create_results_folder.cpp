@@ -12,6 +12,7 @@
 #ifdef _WIN32
 	#define DIRECTORY_SEPARATOR "\\"
 	#define DIRECTORY_SEPARATOR_SEARCH "/\\"
+	#define REMOVE_FOLDER_COMMAND "rmdir /S /Q "
 /*	
 	#include"direntvc.h"
 	#include <direct.h>
@@ -30,9 +31,10 @@
 	#define SHELL_COPY_COMMAND "copy"
 //	#define DEFAULT_RESULTS_DIRECTORY ".//results//"
 */
-#elif __linux__
+#elif __linux__|| defined __APPLE__ || __APPLE__
 	#define DIRECTORY_SEPARATOR "/"
 	#define DIRECTORY_SEPARATOR_SEARCH "/"
+	#define REMOVE_FOLDER_COMMAND "rm -rf "
 /*
 	#include"dirent.h"
 	#include"unistd.h"

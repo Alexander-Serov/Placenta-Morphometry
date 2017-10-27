@@ -19,7 +19,7 @@
 	#include <direct.h>
     
 	*/
-#elif __linux__
+#elif __linux__ || defined __APPLE__ || __APPLE__
 	#define DIRECTORY_SEPARATOR "/"
 
 	#include"dirent.h"		// For working with folders

@@ -8,7 +8,7 @@
 // Platform-specific commands
 #ifdef _WIN32
 	#include"population_sacha\Log_steps.h"
-#elif __linux__
+#elif __linux__ || defined __APPLE__ || __APPLE__
 	#include"population_sacha/Log_steps.h"
 #endif
 

@@ -19,7 +19,7 @@
 //	#include"direntvc.h"
 	#include"population_sacha\Log_steps.h"	
 //	#include"population_sacha\Statistics_placenta.h"
-#elif __linux__
+#elif __linux__ || defined __APPLE__ || __APPLE__
 //	#include"dirent.h"
 	#include"population_sacha/Log_steps.h"
 //	#include"population_sacha/Statistics_placenta.h"
