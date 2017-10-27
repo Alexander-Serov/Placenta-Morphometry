@@ -1,0 +1,2180 @@
+17:47:34	 ======================= PROGRAM STARTED =======================.
+
+17:47:34	 Trying to load images from folder: /home/sacha/Population/in/.
+
+17:47:34	 Entering loading procedure.
+
+17:47:34	 Accessing the results folder.
+
+17:47:34	 Verifying the presence of a .lock file.
+
+17:47:34	 Skipping file: 2274_4000.png.
+
+17:47:34	 Entering loading procedure.
+
+17:47:34	 Accessing the results folder.
+
+17:47:34	 Verifying the presence of a .lock file.
+
+17:47:34	 Skipping file: 2274_5000.png.
+
+17:47:34	 Entering loading procedure.
+
+17:47:34	 Accessing the results folder.
+
+17:47:34	 Verifying the presence of a .lock file.
+
+17:47:34	 Verifying the presence of a .finished file.
+
+17:47:34	 Skipping file: 2274_3000.png.
+
+17:47:34	 Entering loading procedure.
+
+17:47:34	 Accessing the results folder.
+
+17:47:34	 Verifying the presence of a .lock file.
+
+17:47:34	 Skipping file: 2274_6000.png.
+
+17:47:34	 Entering loading procedure.
+
+17:47:34	 Accessing the results folder.
+
+17:47:34	 Verifying the presence of a .lock file.
+
+17:47:34	 Skipping file: 2274_7000.png.
+
+17:47:34	 Entering loading procedure.
+
+17:47:34	 Accessing the results folder.
+
+17:47:34	 Verifying the presence of a .lock file.
+
+17:47:34	 Skipping file: 2274_8000.png.
+
+17:47:34	 Entering loading procedure.
+
+17:47:34	 Accessing the results folder.
+
+17:47:34	 Verifying the presence of a .lock file.
+
+17:47:34	 Skipping file: 2274_9000.png.
+
+17:47:34	 Entering loading procedure.
+
+17:47:34	 Accessing the results folder.
+
+17:47:34	 Verifying the presence of a .lock file.
+
+17:47:34	 Skipping file: 2274_10000.png.
+
+17:47:34	 Entering loading procedure.
+
+17:47:34	 Accessing the results folder.
+
+17:47:34	 Verifying the presence of a .lock file.
+
+17:47:34	 Skipping file: 2274_11000.png.
+
+17:47:34	 Entering loading procedure.
+
+17:47:34	 Accessing the results folder.
+
+17:47:34	 Verifying the presence of a .lock file.
+
+17:47:34	 Skipping file: 2274_12000.png.
+
+17:47:34	 Entering loading procedure.
+
+17:47:34	 Accessing the results folder.
+
+17:47:34	 Verifying the presence of a .lock file.
+
+17:47:34	 Verifying the presence of a .finished file.
+
+17:47:34	 Skipping file: 2274_1000.png.
+
+17:47:34	 Entering loading procedure.
+
+17:47:34	 Accessing the results folder.
+
+17:47:34	 Verifying the presence of a .lock file.
+
+17:47:34	 Skipping file: 2274_2000.png.
+
+17:47:34	 Trying to load images from folder: /home/sacha/Population/in/.
+
+17:47:34	 Entering loading procedure.
+
+17:47:34	 Accessing the results folder.
+
+17:47:34	 Verifying the presence of a .lock file.
+
+17:47:34	 Skipping file: 2274_4000.png.
+
+17:47:34	 Entering loading procedure.
+
+17:47:34	 Accessing the results folder.
+
+17:47:34	 Verifying the presence of a .lock file.
+
+17:47:34	 Skipping file: 2274_5000.png.
+
+17:47:34	 Entering loading procedure.
+
+17:47:34	 Accessing the results folder.
+
+17:47:34	 Verifying the presence of a .lock file.
+
+17:47:34	 Verifying the presence of a .finished file.
+
+17:47:34	 Skipping file: 2274_3000.png.
+
+17:47:34	 Entering loading procedure.
+
+17:47:34	 Accessing the results folder.
+
+17:47:34	 Verifying the presence of a .lock file.
+
+17:47:34	 Skipping file: 2274_6000.png.
+
+17:47:34	 Entering loading procedure.
+
+17:47:34	 Accessing the results folder.
+
+17:47:34	 Verifying the presence of a .lock file.
+
+17:47:34	 Skipping file: 2274_7000.png.
+
+17:47:34	 Entering loading procedure.
+
+17:47:34	 Accessing the results folder.
+
+17:47:34	 Verifying the presence of a .lock file.
+
+17:47:34	 Skipping file: 2274_8000.png.
+
+17:47:34	 Entering loading procedure.
+
+17:47:34	 Accessing the results folder.
+
+17:47:34	 Verifying the presence of a .lock file.
+
+17:47:34	 Skipping file: 2274_9000.png.
+
+17:47:34	 Entering loading procedure.
+
+17:47:34	 Accessing the results folder.
+
+17:47:34	 Verifying the presence of a .lock file.
+
+17:47:34	 Skipping file: 2274_10000.png.
+
+17:47:34	 Entering loading procedure.
+
+17:47:34	 Accessing the results folder.
+
+17:47:34	 Verifying the presence of a .lock file.
+
+17:47:34	 Skipping file: 2274_11000.png.
+
+17:47:34	 Entering loading procedure.
+
+17:47:34	 Accessing the results folder.
+
+17:47:34	 Verifying the presence of a .lock file.
+
+17:47:34	 Skipping file: 2274_12000.png.
+
+17:47:34	 Entering loading procedure.
+
+17:47:34	 Accessing the results folder.
+
+17:47:34	 Verifying the presence of a .lock file.
+
+17:47:34	 Verifying the presence of a .finished file.
+
+17:47:34	 Skipping file: 2274_1000.png.
+
+17:47:34	 Entering loading procedure.
+
+17:47:34	 Accessing the results folder.
+
+17:47:34	 Verifying the presence of a .lock file.
+
+17:47:34	 Skipping file: 2274_2000.png.
+
+17:47:34	 ======================= PROGRAM SUCCESSFULLY TERMINATED =======================.
+
+17:47:40	 Trying to load images from folder: /home/sacha/Population/in/.
+
+17:47:40	 Trying to load images from folder: /home/sacha/Population/in/.
+
+17:47:40	 Entering loading procedure.
+
+17:47:40	 Accessing the results folder.
+
+17:47:40	 Verifying the presence of a .lock file.
+
+17:47:40	 Skipping file: 2274_4000.png.
+
+17:47:40	 Entering loading procedure.
+
+17:47:40	 Accessing the results folder.
+
+17:47:40	 Verifying the presence of a .lock file.
+
+17:47:40	 Skipping file: 2274_5000.png.
+
+17:47:40	 Entering loading procedure.
+
+17:47:40	 Accessing the results folder.
+
+17:47:40	 Verifying the presence of a .lock file.
+
+17:47:40	 Verifying the presence of a .finished file.
+
+17:47:40	 Skipping file: 2274_3000.png.
+
+17:47:40	 Entering loading procedure.
+
+17:47:40	 Accessing the results folder.
+
+17:47:40	 Verifying the presence of a .lock file.
+
+17:47:40	 Skipping file: 2274_6000.png.
+
+17:47:40	 Entering loading procedure.
+
+17:47:40	 Accessing the results folder.
+
+17:47:40	 Verifying the presence of a .lock file.
+
+17:47:40	 Skipping file: 2274_7000.png.
+
+17:47:40	 Entering loading procedure.
+
+17:47:40	 Accessing the results folder.
+
+17:47:40	 Verifying the presence of a .lock file.
+
+17:47:40	 Skipping file: 2274_8000.png.
+
+17:47:40	 Entering loading procedure.
+
+17:47:40	 Accessing the results folder.
+
+17:47:40	 Verifying the presence of a .lock file.
+
+17:47:40	 Skipping file: 2274_9000.png.
+
+17:47:40	 Entering loading procedure.
+
+17:47:40	 Accessing the results folder.
+
+17:47:40	 Verifying the presence of a .lock file.
+
+17:47:40	 Skipping file: 2274_10000.png.
+
+17:47:40	 Entering loading procedure.
+
+17:47:40	 Accessing the results folder.
+
+17:47:40	 Verifying the presence of a .lock file.
+
+17:47:40	 Skipping file: 2274_11000.png.
+
+17:47:40	 Entering loading procedure.
+
+17:47:40	 Accessing the results folder.
+
+17:47:40	 Verifying the presence of a .lock file.
+
+17:47:40	 Skipping file: 2274_12000.png.
+
+17:47:40	 Entering loading procedure.
+
+17:47:40	 Accessing the results folder.
+
+17:47:40	 Verifying the presence of a .lock file.
+
+17:47:40	 Verifying the presence of a .finished file.
+
+17:47:40	 Skipping file: 2274_1000.png.
+
+17:47:40	 Entering loading procedure.
+
+17:47:40	 Accessing the results folder.
+
+17:47:40	 Verifying the presence of a .lock file.
+
+17:47:40	 Verifying the presence of a .finished file.
+
+17:47:40	 Skipping file: 2274_2000.png.
+
+17:47:40	 Trying to load images from folder: /home/sacha/Population/in/.
+
+17:47:40	 Entering loading procedure.
+
+17:47:40	 Accessing the results folder.
+
+17:47:40	 Verifying the presence of a .lock file.
+
+17:47:40	 Skipping file: 2274_4000.png.
+
+17:47:40	 Entering loading procedure.
+
+17:47:40	 Accessing the results folder.
+
+17:47:40	 Verifying the presence of a .lock file.
+
+17:47:40	 Skipping file: 2274_5000.png.
+
+17:47:40	 Entering loading procedure.
+
+17:47:40	 Accessing the results folder.
+
+17:47:40	 Verifying the presence of a .lock file.
+
+17:47:40	 Verifying the presence of a .finished file.
+
+17:47:40	 Skipping file: 2274_3000.png.
+
+17:47:40	 Entering loading procedure.
+
+17:47:40	 Accessing the results folder.
+
+17:47:40	 Verifying the presence of a .lock file.
+
+17:47:40	 Skipping file: 2274_6000.png.
+
+17:47:40	 Entering loading procedure.
+
+17:47:40	 Accessing the results folder.
+
+17:47:40	 Verifying the presence of a .lock file.
+
+17:47:40	 Skipping file: 2274_7000.png.
+
+17:47:40	 Entering loading procedure.
+
+17:47:40	 Accessing the results folder.
+
+17:47:40	 Verifying the presence of a .lock file.
+
+17:47:40	 Skipping file: 2274_8000.png.
+
+17:47:40	 Entering loading procedure.
+
+17:47:40	 Accessing the results folder.
+
+17:47:40	 Verifying the presence of a .lock file.
+
+17:47:40	 Skipping file: 2274_9000.png.
+
+17:47:40	 Entering loading procedure.
+
+17:47:40	 Accessing the results folder.
+
+17:47:40	 Verifying the presence of a .lock file.
+
+17:47:40	 Skipping file: 2274_10000.png.
+
+17:47:40	 Entering loading procedure.
+
+17:47:40	 Accessing the results folder.
+
+17:47:40	 Verifying the presence of a .lock file.
+
+17:47:40	 Skipping file: 2274_11000.png.
+
+17:47:40	 Entering loading procedure.
+
+17:47:40	 Accessing the results folder.
+
+17:47:40	 Verifying the presence of a .lock file.
+
+17:47:40	 Skipping file: 2274_12000.png.
+
+17:47:40	 Entering loading procedure.
+
+17:47:40	 Accessing the results folder.
+
+17:47:40	 Verifying the presence of a .lock file.
+
+17:47:40	 Verifying the presence of a .finished file.
+
+17:47:40	 Skipping file: 2274_1000.png.
+
+17:47:40	 Entering loading procedure.
+
+17:47:40	 Accessing the results folder.
+
+17:47:40	 Verifying the presence of a .lock file.
+
+17:47:40	 Verifying the presence of a .finished file.
+
+17:47:40	 Skipping file: 2274_2000.png.
+
+17:47:40	 ======================= PROGRAM SUCCESSFULLY TERMINATED =======================.
+
+17:47:57	 Trying to load images from folder: /home/sacha/Population/in/.
+
+17:47:57	 Entering loading procedure.
+
+17:47:57	 Accessing the results folder.
+
+17:47:57	 Verifying the presence of a .lock file.
+
+17:47:57	 Skipping file: 2274_5000.png.
+
+17:47:57	 Entering loading procedure.
+
+17:47:57	 Accessing the results folder.
+
+17:47:57	 Verifying the presence of a .lock file.
+
+17:47:57	 Verifying the presence of a .finished file.
+
+17:47:57	 Skipping file: 2274_3000.png.
+
+17:47:57	 Entering loading procedure.
+
+17:47:57	 Accessing the results folder.
+
+17:47:57	 Verifying the presence of a .lock file.
+
+17:47:57	 Skipping file: 2274_6000.png.
+
+17:47:57	 Entering loading procedure.
+
+17:47:57	 Accessing the results folder.
+
+17:47:57	 Verifying the presence of a .lock file.
+
+17:47:57	 Skipping file: 2274_7000.png.
+
+17:47:57	 Entering loading procedure.
+
+17:47:57	 Accessing the results folder.
+
+17:47:57	 Verifying the presence of a .lock file.
+
+17:47:57	 Skipping file: 2274_8000.png.
+
+17:47:57	 Entering loading procedure.
+
+17:47:57	 Accessing the results folder.
+
+17:47:57	 Verifying the presence of a .lock file.
+
+17:47:57	 Skipping file: 2274_9000.png.
+
+17:47:57	 Entering loading procedure.
+
+17:47:57	 Accessing the results folder.
+
+17:47:57	 Verifying the presence of a .lock file.
+
+17:47:57	 Skipping file: 2274_10000.png.
+
+17:47:57	 Entering loading procedure.
+
+17:47:57	 Accessing the results folder.
+
+17:47:57	 Verifying the presence of a .lock file.
+
+17:47:57	 Skipping file: 2274_11000.png.
+
+17:47:57	 Entering loading procedure.
+
+17:47:57	 Accessing the results folder.
+
+17:47:57	 Verifying the presence of a .lock file.
+
+17:47:57	 Skipping file: 2274_12000.png.
+
+17:47:57	 Entering loading procedure.
+
+17:47:57	 Accessing the results folder.
+
+17:47:57	 Verifying the presence of a .lock file.
+
+17:47:57	 Verifying the presence of a .finished file.
+
+17:47:57	 Skipping file: 2274_1000.png.
+
+17:47:57	 Entering loading procedure.
+
+17:47:57	 Accessing the results folder.
+
+17:47:57	 Verifying the presence of a .lock file.
+
+17:47:57	 Verifying the presence of a .finished file.
+
+17:47:57	 Skipping file: 2274_2000.png.
+
+17:47:57	 Trying to load images from folder: /home/sacha/Population/in/.
+
+17:47:57	 Entering loading procedure.
+
+17:47:57	 Accessing the results folder.
+
+17:47:57	 Verifying the presence of a .lock file.
+
+17:47:57	 Verifying the presence of a .finished file.
+
+17:47:57	 Skipping file: 2274_4000.png.
+
+17:47:57	 Entering loading procedure.
+
+17:47:57	 Accessing the results folder.
+
+17:47:57	 Verifying the presence of a .lock file.
+
+17:47:57	 Skipping file: 2274_5000.png.
+
+17:47:57	 Entering loading procedure.
+
+17:47:57	 Accessing the results folder.
+
+17:47:57	 Verifying the presence of a .lock file.
+
+17:47:57	 Verifying the presence of a .finished file.
+
+17:47:57	 Skipping file: 2274_3000.png.
+
+17:47:57	 Entering loading procedure.
+
+17:47:57	 Accessing the results folder.
+
+17:47:57	 Verifying the presence of a .lock file.
+
+17:47:57	 Skipping file: 2274_6000.png.
+
+17:47:57	 Entering loading procedure.
+
+17:47:57	 Accessing the results folder.
+
+17:47:57	 Verifying the presence of a .lock file.
+
+17:47:57	 Skipping file: 2274_7000.png.
+
+17:47:57	 Entering loading procedure.
+
+17:47:57	 Accessing the results folder.
+
+17:47:57	 Verifying the presence of a .lock file.
+
+17:47:57	 Skipping file: 2274_8000.png.
+
+17:47:57	 Entering loading procedure.
+
+17:47:57	 Accessing the results folder.
+
+17:47:57	 Verifying the presence of a .lock file.
+
+17:47:57	 Skipping file: 2274_9000.png.
+
+17:47:57	 Entering loading procedure.
+
+17:47:57	 Accessing the results folder.
+
+17:47:57	 Verifying the presence of a .lock file.
+
+17:47:57	 Skipping file: 2274_10000.png.
+
+17:47:57	 Entering loading procedure.
+
+17:47:57	 Accessing the results folder.
+
+17:47:57	 Verifying the presence of a .lock file.
+
+17:47:57	 Skipping file: 2274_11000.png.
+
+17:47:57	 Entering loading procedure.
+
+17:47:57	 Accessing the results folder.
+
+17:47:57	 Verifying the presence of a .lock file.
+
+17:47:57	 Skipping file: 2274_12000.png.
+
+17:47:57	 Entering loading procedure.
+
+17:47:57	 Accessing the results folder.
+
+17:47:57	 Verifying the presence of a .lock file.
+
+17:47:57	 Verifying the presence of a .finished file.
+
+17:47:57	 Skipping file: 2274_1000.png.
+
+17:47:57	 Entering loading procedure.
+
+17:47:57	 Accessing the results folder.
+
+17:47:57	 Verifying the presence of a .lock file.
+
+17:47:57	 Verifying the presence of a .finished file.
+
+17:47:57	 Skipping file: 2274_2000.png.
+
+17:47:57	 Trying to load images from folder: /home/sacha/Population/in/.
+
+17:47:57	 Entering loading procedure.
+
+17:47:57	 Accessing the results folder.
+
+17:47:57	 Verifying the presence of a .lock file.
+
+17:47:57	 Verifying the presence of a .finished file.
+
+17:47:57	 Skipping file: 2274_4000.png.
+
+17:47:57	 Entering loading procedure.
+
+17:47:57	 Accessing the results folder.
+
+17:47:57	 Verifying the presence of a .lock file.
+
+17:47:57	 Skipping file: 2274_5000.png.
+
+17:47:57	 Entering loading procedure.
+
+17:47:57	 Accessing the results folder.
+
+17:47:57	 Verifying the presence of a .lock file.
+
+17:47:57	 Verifying the presence of a .finished file.
+
+17:47:57	 Skipping file: 2274_3000.png.
+
+17:47:57	 Entering loading procedure.
+
+17:47:57	 Accessing the results folder.
+
+17:47:57	 Verifying the presence of a .lock file.
+
+17:47:57	 Skipping file: 2274_6000.png.
+
+17:47:57	 Entering loading procedure.
+
+17:47:57	 Accessing the results folder.
+
+17:47:57	 Verifying the presence of a .lock file.
+
+17:47:57	 Skipping file: 2274_7000.png.
+
+17:47:57	 Entering loading procedure.
+
+17:47:57	 Accessing the results folder.
+
+17:47:57	 Verifying the presence of a .lock file.
+
+17:47:57	 Skipping file: 2274_8000.png.
+
+17:47:57	 Entering loading procedure.
+
+17:47:57	 Accessing the results folder.
+
+17:47:57	 Verifying the presence of a .lock file.
+
+17:47:57	 Skipping file: 2274_9000.png.
+
+17:47:57	 Entering loading procedure.
+
+17:47:57	 Accessing the results folder.
+
+17:47:57	 Verifying the presence of a .lock file.
+
+17:47:57	 Skipping file: 2274_10000.png.
+
+17:47:57	 Entering loading procedure.
+
+17:47:57	 Accessing the results folder.
+
+17:47:57	 Verifying the presence of a .lock file.
+
+17:47:57	 Skipping file: 2274_11000.png.
+
+17:47:57	 Entering loading procedure.
+
+17:47:57	 Accessing the results folder.
+
+17:47:57	 Verifying the presence of a .lock file.
+
+17:47:57	 Skipping file: 2274_12000.png.
+
+17:47:57	 Entering loading procedure.
+
+17:47:57	 Accessing the results folder.
+
+17:47:57	 Verifying the presence of a .lock file.
+
+17:47:57	 Verifying the presence of a .finished file.
+
+17:47:57	 Skipping file: 2274_1000.png.
+
+17:47:57	 Entering loading procedure.
+
+17:47:57	 Accessing the results folder.
+
+17:47:57	 Verifying the presence of a .lock file.
+
+17:47:57	 Verifying the presence of a .finished file.
+
+17:47:57	 Skipping file: 2274_2000.png.
+
+17:47:57	 ======================= PROGRAM SUCCESSFULLY TERMINATED =======================.
+
+17:49:06	 Trying to load images from folder: /home/sacha/Population/in/.
+
+17:49:06	 Entering loading procedure.
+
+17:49:06	 Accessing the results folder.
+
+17:49:06	 Verifying the presence of a .lock file.
+
+17:49:06	 Verifying the presence of a .finished file.
+
+17:49:06	 Skipping file: 2274_3000.png.
+
+17:49:06	 Entering loading procedure.
+
+17:49:06	 Accessing the results folder.
+
+17:49:06	 Verifying the presence of a .lock file.
+
+17:49:06	 Skipping file: 2274_6000.png.
+
+17:49:06	 Entering loading procedure.
+
+17:49:06	 Accessing the results folder.
+
+17:49:06	 Verifying the presence of a .lock file.
+
+17:49:06	 Skipping file: 2274_7000.png.
+
+17:49:06	 Entering loading procedure.
+
+17:49:06	 Accessing the results folder.
+
+17:49:06	 Verifying the presence of a .lock file.
+
+17:49:06	 Skipping file: 2274_8000.png.
+
+17:49:06	 Entering loading procedure.
+
+17:49:06	 Accessing the results folder.
+
+17:49:06	 Verifying the presence of a .lock file.
+
+17:49:06	 Skipping file: 2274_9000.png.
+
+17:49:06	 Entering loading procedure.
+
+17:49:06	 Accessing the results folder.
+
+17:49:06	 Verifying the presence of a .lock file.
+
+17:49:06	 Skipping file: 2274_10000.png.
+
+17:49:06	 Entering loading procedure.
+
+17:49:06	 Accessing the results folder.
+
+17:49:06	 Verifying the presence of a .lock file.
+
+17:49:06	 Skipping file: 2274_11000.png.
+
+17:49:06	 Entering loading procedure.
+
+17:49:06	 Accessing the results folder.
+
+17:49:06	 Verifying the presence of a .lock file.
+
+17:49:06	 Skipping file: 2274_12000.png.
+
+17:49:06	 Entering loading procedure.
+
+17:49:06	 Accessing the results folder.
+
+17:49:06	 Verifying the presence of a .lock file.
+
+17:49:06	 Verifying the presence of a .finished file.
+
+17:49:06	 Skipping file: 2274_1000.png.
+
+17:49:06	 Entering loading procedure.
+
+17:49:06	 Accessing the results folder.
+
+17:49:06	 Verifying the presence of a .lock file.
+
+17:49:06	 Verifying the presence of a .finished file.
+
+17:49:06	 Skipping file: 2274_2000.png.
+
+17:49:06	 Trying to load images from folder: /home/sacha/Population/in/.
+
+17:49:06	 Entering loading procedure.
+
+17:49:06	 Accessing the results folder.
+
+17:49:06	 Verifying the presence of a .lock file.
+
+17:49:06	 Verifying the presence of a .finished file.
+
+17:49:06	 Skipping file: 2274_4000.png.
+
+17:49:06	 Entering loading procedure.
+
+17:49:06	 Accessing the results folder.
+
+17:49:06	 Verifying the presence of a .lock file.
+
+17:49:06	 Verifying the presence of a .finished file.
+
+17:49:06	 Skipping file: 2274_5000.png.
+
+17:49:06	 Entering loading procedure.
+
+17:49:06	 Accessing the results folder.
+
+17:49:06	 Verifying the presence of a .lock file.
+
+17:49:06	 Verifying the presence of a .finished file.
+
+17:49:06	 Skipping file: 2274_3000.png.
+
+17:49:06	 Entering loading procedure.
+
+17:49:06	 Accessing the results folder.
+
+17:49:06	 Verifying the presence of a .lock file.
+
+17:49:06	 Skipping file: 2274_6000.png.
+
+17:49:06	 Entering loading procedure.
+
+17:49:06	 Accessing the results folder.
+
+17:49:06	 Verifying the presence of a .lock file.
+
+17:49:06	 Skipping file: 2274_7000.png.
+
+17:49:06	 Entering loading procedure.
+
+17:49:06	 Accessing the results folder.
+
+17:49:06	 Verifying the presence of a .lock file.
+
+17:49:06	 Skipping file: 2274_8000.png.
+
+17:49:06	 Entering loading procedure.
+
+17:49:06	 Accessing the results folder.
+
+17:49:06	 Verifying the presence of a .lock file.
+
+17:49:06	 Skipping file: 2274_9000.png.
+
+17:49:06	 Entering loading procedure.
+
+17:49:06	 Accessing the results folder.
+
+17:49:06	 Verifying the presence of a .lock file.
+
+17:49:06	 Skipping file: 2274_10000.png.
+
+17:49:06	 Entering loading procedure.
+
+17:49:06	 Accessing the results folder.
+
+17:49:06	 Verifying the presence of a .lock file.
+
+17:49:06	 Skipping file: 2274_11000.png.
+
+17:49:06	 Entering loading procedure.
+
+17:49:06	 Accessing the results folder.
+
+17:49:06	 Verifying the presence of a .lock file.
+
+17:49:06	 Skipping file: 2274_12000.png.
+
+17:49:06	 Entering loading procedure.
+
+17:49:06	 Accessing the results folder.
+
+17:49:06	 Verifying the presence of a .lock file.
+
+17:49:06	 Verifying the presence of a .finished file.
+
+17:49:06	 Skipping file: 2274_1000.png.
+
+17:49:06	 Entering loading procedure.
+
+17:49:06	 Accessing the results folder.
+
+17:49:06	 Verifying the presence of a .lock file.
+
+17:49:06	 Verifying the presence of a .finished file.
+
+17:49:06	 Skipping file: 2274_2000.png.
+
+17:49:06	 Trying to load images from folder: /home/sacha/Population/in/.
+
+17:49:06	 Entering loading procedure.
+
+17:49:06	 Accessing the results folder.
+
+17:49:06	 Verifying the presence of a .lock file.
+
+17:49:06	 Verifying the presence of a .finished file.
+
+17:49:06	 Skipping file: 2274_4000.png.
+
+17:49:06	 Entering loading procedure.
+
+17:49:06	 Accessing the results folder.
+
+17:49:06	 Verifying the presence of a .lock file.
+
+17:49:06	 Verifying the presence of a .finished file.
+
+17:49:06	 Skipping file: 2274_5000.png.
+
+17:49:06	 Entering loading procedure.
+
+17:49:06	 Accessing the results folder.
+
+17:49:06	 Verifying the presence of a .lock file.
+
+17:49:06	 Verifying the presence of a .finished file.
+
+17:49:06	 Skipping file: 2274_3000.png.
+
+17:49:06	 Entering loading procedure.
+
+17:49:06	 Accessing the results folder.
+
+17:49:06	 Verifying the presence of a .lock file.
+
+17:49:06	 Skipping file: 2274_6000.png.
+
+17:49:06	 Entering loading procedure.
+
+17:49:06	 Accessing the results folder.
+
+17:49:06	 Verifying the presence of a .lock file.
+
+17:49:06	 Skipping file: 2274_7000.png.
+
+17:49:06	 Entering loading procedure.
+
+17:49:06	 Accessing the results folder.
+
+17:49:06	 Verifying the presence of a .lock file.
+
+17:49:06	 Skipping file: 2274_8000.png.
+
+17:49:06	 Entering loading procedure.
+
+17:49:06	 Accessing the results folder.
+
+17:49:06	 Verifying the presence of a .lock file.
+
+17:49:06	 Skipping file: 2274_9000.png.
+
+17:49:06	 Entering loading procedure.
+
+17:49:06	 Accessing the results folder.
+
+17:49:06	 Verifying the presence of a .lock file.
+
+17:49:06	 Skipping file: 2274_10000.png.
+
+17:49:06	 Entering loading procedure.
+
+17:49:06	 Accessing the results folder.
+
+17:49:06	 Verifying the presence of a .lock file.
+
+17:49:06	 Skipping file: 2274_11000.png.
+
+17:49:06	 Entering loading procedure.
+
+17:49:06	 Accessing the results folder.
+
+17:49:06	 Verifying the presence of a .lock file.
+
+17:49:06	 Skipping file: 2274_12000.png.
+
+17:49:06	 Entering loading procedure.
+
+17:49:06	 Accessing the results folder.
+
+17:49:06	 Verifying the presence of a .lock file.
+
+17:49:06	 Verifying the presence of a .finished file.
+
+17:49:06	 Skipping file: 2274_1000.png.
+
+17:49:06	 Entering loading procedure.
+
+17:49:06	 Accessing the results folder.
+
+17:49:06	 Verifying the presence of a .lock file.
+
+17:49:06	 Verifying the presence of a .finished file.
+
+17:49:06	 Skipping file: 2274_2000.png.
+
+17:49:06	 ======================= PROGRAM SUCCESSFULLY TERMINATED =======================.
+
+17:50:38	 Trying to load images from folder: /home/sacha/Population/in/.
+
+17:50:38	 Entering loading procedure.
+
+17:50:38	 Accessing the results folder.
+
+17:50:38	 Verifying the presence of a .lock file.
+
+17:50:38	 Skipping file: 2274_7000.png.
+
+17:50:38	 Entering loading procedure.
+
+17:50:38	 Accessing the results folder.
+
+17:50:38	 Verifying the presence of a .lock file.
+
+17:50:38	 Skipping file: 2274_8000.png.
+
+17:50:38	 Entering loading procedure.
+
+17:50:38	 Accessing the results folder.
+
+17:50:38	 Verifying the presence of a .lock file.
+
+17:50:38	 Skipping file: 2274_9000.png.
+
+17:50:38	 Entering loading procedure.
+
+17:50:38	 Accessing the results folder.
+
+17:50:38	 Verifying the presence of a .lock file.
+
+17:50:38	 Skipping file: 2274_10000.png.
+
+17:50:38	 Entering loading procedure.
+
+17:50:38	 Accessing the results folder.
+
+17:50:38	 Verifying the presence of a .lock file.
+
+17:50:38	 Skipping file: 2274_11000.png.
+
+17:50:38	 Entering loading procedure.
+
+17:50:38	 Accessing the results folder.
+
+17:50:38	 Verifying the presence of a .lock file.
+
+17:50:38	 Skipping file: 2274_12000.png.
+
+17:50:38	 Entering loading procedure.
+
+17:50:38	 Accessing the results folder.
+
+17:50:38	 Verifying the presence of a .lock file.
+
+17:50:38	 Verifying the presence of a .finished file.
+
+17:50:38	 Skipping file: 2274_1000.png.
+
+17:50:38	 Entering loading procedure.
+
+17:50:38	 Accessing the results folder.
+
+17:50:38	 Verifying the presence of a .lock file.
+
+17:50:38	 Verifying the presence of a .finished file.
+
+17:50:38	 Skipping file: 2274_2000.png.
+
+17:50:38	 Trying to load images from folder: /home/sacha/Population/in/.
+
+17:50:38	 Entering loading procedure.
+
+17:50:38	 Accessing the results folder.
+
+17:50:38	 Verifying the presence of a .lock file.
+
+17:50:38	 Verifying the presence of a .finished file.
+
+17:50:38	 Skipping file: 2274_4000.png.
+
+17:50:38	 Entering loading procedure.
+
+17:50:38	 Accessing the results folder.
+
+17:50:38	 Verifying the presence of a .lock file.
+
+17:50:38	 Verifying the presence of a .finished file.
+
+17:50:38	 Skipping file: 2274_5000.png.
+
+17:50:38	 Entering loading procedure.
+
+17:50:38	 Accessing the results folder.
+
+17:50:38	 Verifying the presence of a .lock file.
+
+17:50:38	 Verifying the presence of a .finished file.
+
+17:50:38	 Skipping file: 2274_3000.png.
+
+17:50:38	 Entering loading procedure.
+
+17:50:38	 Accessing the results folder.
+
+17:50:38	 Verifying the presence of a .lock file.
+
+17:50:38	 Verifying the presence of a .finished file.
+
+17:50:38	 Skipping file: 2274_6000.png.
+
+17:50:38	 Entering loading procedure.
+
+17:50:38	 Accessing the results folder.
+
+17:50:38	 Verifying the presence of a .lock file.
+
+17:50:38	 Skipping file: 2274_7000.png.
+
+17:50:38	 Entering loading procedure.
+
+17:50:38	 Accessing the results folder.
+
+17:50:38	 Verifying the presence of a .lock file.
+
+17:50:38	 Skipping file: 2274_8000.png.
+
+17:50:38	 Entering loading procedure.
+
+17:50:38	 Accessing the results folder.
+
+17:50:38	 Verifying the presence of a .lock file.
+
+17:50:38	 Skipping file: 2274_9000.png.
+
+17:50:38	 Entering loading procedure.
+
+17:50:38	 Accessing the results folder.
+
+17:50:38	 Verifying the presence of a .lock file.
+
+17:50:38	 Skipping file: 2274_10000.png.
+
+17:50:38	 Entering loading procedure.
+
+17:50:38	 Accessing the results folder.
+
+17:50:38	 Verifying the presence of a .lock file.
+
+17:50:38	 Skipping file: 2274_11000.png.
+
+17:50:38	 Entering loading procedure.
+
+17:50:38	 Accessing the results folder.
+
+17:50:38	 Verifying the presence of a .lock file.
+
+17:50:38	 Skipping file: 2274_12000.png.
+
+17:50:38	 Entering loading procedure.
+
+17:50:38	 Accessing the results folder.
+
+17:50:38	 Verifying the presence of a .lock file.
+
+17:50:38	 Verifying the presence of a .finished file.
+
+17:50:38	 Skipping file: 2274_1000.png.
+
+17:50:38	 Entering loading procedure.
+
+17:50:38	 Accessing the results folder.
+
+17:50:38	 Verifying the presence of a .lock file.
+
+17:50:38	 Verifying the presence of a .finished file.
+
+17:50:38	 Skipping file: 2274_2000.png.
+
+17:50:38	 Trying to load images from folder: /home/sacha/Population/in/.
+
+17:50:38	 Entering loading procedure.
+
+17:50:38	 Accessing the results folder.
+
+17:50:38	 Verifying the presence of a .lock file.
+
+17:50:38	 Verifying the presence of a .finished file.
+
+17:50:38	 Skipping file: 2274_4000.png.
+
+17:50:38	 Entering loading procedure.
+
+17:50:38	 Accessing the results folder.
+
+17:50:38	 Verifying the presence of a .lock file.
+
+17:50:38	 Verifying the presence of a .finished file.
+
+17:50:38	 Skipping file: 2274_5000.png.
+
+17:50:38	 Entering loading procedure.
+
+17:50:38	 Accessing the results folder.
+
+17:50:38	 Verifying the presence of a .lock file.
+
+17:50:38	 Verifying the presence of a .finished file.
+
+17:50:38	 Skipping file: 2274_3000.png.
+
+17:50:38	 Entering loading procedure.
+
+17:50:38	 Accessing the results folder.
+
+17:50:38	 Verifying the presence of a .lock file.
+
+17:50:38	 Verifying the presence of a .finished file.
+
+17:50:38	 Skipping file: 2274_6000.png.
+
+17:50:38	 Entering loading procedure.
+
+17:50:38	 Accessing the results folder.
+
+17:50:38	 Verifying the presence of a .lock file.
+
+17:50:38	 Skipping file: 2274_7000.png.
+
+17:50:38	 Entering loading procedure.
+
+17:50:38	 Accessing the results folder.
+
+17:50:38	 Verifying the presence of a .lock file.
+
+17:50:38	 Skipping file: 2274_8000.png.
+
+17:50:38	 Entering loading procedure.
+
+17:50:38	 Accessing the results folder.
+
+17:50:38	 Verifying the presence of a .lock file.
+
+17:50:38	 Skipping file: 2274_9000.png.
+
+17:50:38	 Entering loading procedure.
+
+17:50:38	 Accessing the results folder.
+
+17:50:38	 Verifying the presence of a .lock file.
+
+17:50:38	 Skipping file: 2274_10000.png.
+
+17:50:38	 Entering loading procedure.
+
+17:50:38	 Accessing the results folder.
+
+17:50:38	 Verifying the presence of a .lock file.
+
+17:50:38	 Skipping file: 2274_11000.png.
+
+17:50:38	 Entering loading procedure.
+
+17:50:38	 Accessing the results folder.
+
+17:50:38	 Verifying the presence of a .lock file.
+
+17:50:38	 Skipping file: 2274_12000.png.
+
+17:50:38	 Entering loading procedure.
+
+17:50:38	 Accessing the results folder.
+
+17:50:38	 Verifying the presence of a .lock file.
+
+17:50:38	 Verifying the presence of a .finished file.
+
+17:50:38	 Skipping file: 2274_1000.png.
+
+17:50:38	 Entering loading procedure.
+
+17:50:38	 Accessing the results folder.
+
+17:50:38	 Verifying the presence of a .lock file.
+
+17:50:38	 Verifying the presence of a .finished file.
+
+17:50:38	 Skipping file: 2274_2000.png.
+
+17:50:38	 ======================= PROGRAM SUCCESSFULLY TERMINATED =======================.
+
+17:52:29	 Trying to load images from folder: /home/sacha/Population/in/.
+
+17:52:29	 Entering loading procedure.
+
+17:52:29	 Accessing the results folder.
+
+17:52:29	 Verifying the presence of a .lock file.
+
+17:52:29	 Skipping file: 2274_8000.png.
+
+17:52:29	 Entering loading procedure.
+
+17:52:29	 Accessing the results folder.
+
+17:52:29	 Verifying the presence of a .lock file.
+
+17:52:29	 Skipping file: 2274_9000.png.
+
+17:52:29	 Entering loading procedure.
+
+17:52:29	 Accessing the results folder.
+
+17:52:29	 Verifying the presence of a .lock file.
+
+17:52:29	 Skipping file: 2274_10000.png.
+
+17:52:29	 Entering loading procedure.
+
+17:52:29	 Accessing the results folder.
+
+17:52:29	 Verifying the presence of a .lock file.
+
+17:52:29	 Skipping file: 2274_11000.png.
+
+17:52:29	 Entering loading procedure.
+
+17:52:29	 Accessing the results folder.
+
+17:52:29	 Verifying the presence of a .lock file.
+
+17:52:29	 Skipping file: 2274_12000.png.
+
+17:52:29	 Entering loading procedure.
+
+17:52:29	 Accessing the results folder.
+
+17:52:29	 Verifying the presence of a .lock file.
+
+17:52:29	 Verifying the presence of a .finished file.
+
+17:52:29	 Skipping file: 2274_1000.png.
+
+17:52:29	 Entering loading procedure.
+
+17:52:29	 Accessing the results folder.
+
+17:52:29	 Verifying the presence of a .lock file.
+
+17:52:29	 Verifying the presence of a .finished file.
+
+17:52:29	 Skipping file: 2274_2000.png.
+
+17:52:29	 Trying to load images from folder: /home/sacha/Population/in/.
+
+17:52:29	 Entering loading procedure.
+
+17:52:29	 Accessing the results folder.
+
+17:52:29	 Verifying the presence of a .lock file.
+
+17:52:29	 Verifying the presence of a .finished file.
+
+17:52:29	 Skipping file: 2274_4000.png.
+
+17:52:29	 Entering loading procedure.
+
+17:52:29	 Accessing the results folder.
+
+17:52:29	 Verifying the presence of a .lock file.
+
+17:52:29	 Verifying the presence of a .finished file.
+
+17:52:29	 Skipping file: 2274_5000.png.
+
+17:52:29	 Entering loading procedure.
+
+17:52:29	 Accessing the results folder.
+
+17:52:29	 Verifying the presence of a .lock file.
+
+17:52:29	 Verifying the presence of a .finished file.
+
+17:52:29	 Skipping file: 2274_3000.png.
+
+17:52:29	 Entering loading procedure.
+
+17:52:29	 Accessing the results folder.
+
+17:52:29	 Verifying the presence of a .lock file.
+
+17:52:29	 Verifying the presence of a .finished file.
+
+17:52:29	 Skipping file: 2274_6000.png.
+
+17:52:29	 Entering loading procedure.
+
+17:52:29	 Accessing the results folder.
+
+17:52:29	 Verifying the presence of a .lock file.
+
+17:52:29	 Verifying the presence of a .finished file.
+
+17:52:29	 Skipping file: 2274_7000.png.
+
+17:52:29	 Entering loading procedure.
+
+17:52:29	 Accessing the results folder.
+
+17:52:29	 Verifying the presence of a .lock file.
+
+17:52:29	 Skipping file: 2274_8000.png.
+
+17:52:29	 Entering loading procedure.
+
+17:52:29	 Accessing the results folder.
+
+17:52:29	 Verifying the presence of a .lock file.
+
+17:52:29	 Skipping file: 2274_9000.png.
+
+17:52:29	 Entering loading procedure.
+
+17:52:29	 Accessing the results folder.
+
+17:52:29	 Verifying the presence of a .lock file.
+
+17:52:29	 Skipping file: 2274_10000.png.
+
+17:52:29	 Entering loading procedure.
+
+17:52:29	 Accessing the results folder.
+
+17:52:29	 Verifying the presence of a .lock file.
+
+17:52:29	 Skipping file: 2274_11000.png.
+
+17:52:29	 Entering loading procedure.
+
+17:52:29	 Accessing the results folder.
+
+17:52:29	 Verifying the presence of a .lock file.
+
+17:52:29	 Skipping file: 2274_12000.png.
+
+17:52:29	 Entering loading procedure.
+
+17:52:29	 Accessing the results folder.
+
+17:52:29	 Verifying the presence of a .lock file.
+
+17:52:29	 Verifying the presence of a .finished file.
+
+17:52:29	 Skipping file: 2274_1000.png.
+
+17:52:29	 Entering loading procedure.
+
+17:52:29	 Accessing the results folder.
+
+17:52:29	 Verifying the presence of a .lock file.
+
+17:52:29	 Verifying the presence of a .finished file.
+
+17:52:29	 Skipping file: 2274_2000.png.
+
+17:52:29	 Trying to load images from folder: /home/sacha/Population/in/.
+
+17:52:29	 Entering loading procedure.
+
+17:52:29	 Accessing the results folder.
+
+17:52:29	 Verifying the presence of a .lock file.
+
+17:52:29	 Verifying the presence of a .finished file.
+
+17:52:29	 Skipping file: 2274_4000.png.
+
+17:52:29	 Entering loading procedure.
+
+17:52:29	 Accessing the results folder.
+
+17:52:29	 Verifying the presence of a .lock file.
+
+17:52:29	 Verifying the presence of a .finished file.
+
+17:52:29	 Skipping file: 2274_5000.png.
+
+17:52:29	 Entering loading procedure.
+
+17:52:29	 Accessing the results folder.
+
+17:52:29	 Verifying the presence of a .lock file.
+
+17:52:29	 Verifying the presence of a .finished file.
+
+17:52:29	 Skipping file: 2274_3000.png.
+
+17:52:29	 Entering loading procedure.
+
+17:52:29	 Accessing the results folder.
+
+17:52:29	 Verifying the presence of a .lock file.
+
+17:52:29	 Verifying the presence of a .finished file.
+
+17:52:29	 Skipping file: 2274_6000.png.
+
+17:52:29	 Entering loading procedure.
+
+17:52:29	 Accessing the results folder.
+
+17:52:29	 Verifying the presence of a .lock file.
+
+17:52:29	 Verifying the presence of a .finished file.
+
+17:52:29	 Skipping file: 2274_7000.png.
+
+17:52:29	 Entering loading procedure.
+
+17:52:29	 Accessing the results folder.
+
+17:52:29	 Verifying the presence of a .lock file.
+
+17:52:29	 Skipping file: 2274_8000.png.
+
+17:52:29	 Entering loading procedure.
+
+17:52:29	 Accessing the results folder.
+
+17:52:29	 Verifying the presence of a .lock file.
+
+17:52:29	 Skipping file: 2274_9000.png.
+
+17:52:29	 Entering loading procedure.
+
+17:52:29	 Accessing the results folder.
+
+17:52:29	 Verifying the presence of a .lock file.
+
+17:52:29	 Skipping file: 2274_10000.png.
+
+17:52:29	 Entering loading procedure.
+
+17:52:29	 Accessing the results folder.
+
+17:52:29	 Verifying the presence of a .lock file.
+
+17:52:29	 Skipping file: 2274_11000.png.
+
+17:52:29	 Entering loading procedure.
+
+17:52:29	 Accessing the results folder.
+
+17:52:29	 Verifying the presence of a .lock file.
+
+17:52:29	 Skipping file: 2274_12000.png.
+
+17:52:29	 Entering loading procedure.
+
+17:52:29	 Accessing the results folder.
+
+17:52:29	 Verifying the presence of a .lock file.
+
+17:52:29	 Verifying the presence of a .finished file.
+
+17:52:29	 Skipping file: 2274_1000.png.
+
+17:52:29	 Entering loading procedure.
+
+17:52:29	 Accessing the results folder.
+
+17:52:29	 Verifying the presence of a .lock file.
+
+17:52:29	 Verifying the presence of a .finished file.
+
+17:52:29	 Skipping file: 2274_2000.png.
+
+17:52:29	 ======================= PROGRAM SUCCESSFULLY TERMINATED =======================.
+
+17:54:18	 Trying to load images from folder: /home/sacha/Population/in/.
+
+17:54:18	 Entering loading procedure.
+
+17:54:18	 Accessing the results folder.
+
+17:54:18	 Verifying the presence of a .lock file.
+
+17:54:18	 Skipping file: 2274_9000.png.
+
+17:54:18	 Entering loading procedure.
+
+17:54:18	 Accessing the results folder.
+
+17:54:18	 Verifying the presence of a .lock file.
+
+17:54:18	 Skipping file: 2274_10000.png.
+
+17:54:18	 Entering loading procedure.
+
+17:54:18	 Accessing the results folder.
+
+17:54:18	 Verifying the presence of a .lock file.
+
+17:54:18	 Skipping file: 2274_11000.png.
+
+17:54:18	 Entering loading procedure.
+
+17:54:18	 Accessing the results folder.
+
+17:54:18	 Verifying the presence of a .lock file.
+
+17:54:19	 Skipping file: 2274_12000.png.
+
+17:54:19	 Entering loading procedure.
+
+17:54:19	 Accessing the results folder.
+
+17:54:19	 Verifying the presence of a .lock file.
+
+17:54:19	 Verifying the presence of a .finished file.
+
+17:54:19	 Skipping file: 2274_1000.png.
+
+17:54:19	 Entering loading procedure.
+
+17:54:19	 Accessing the results folder.
+
+17:54:19	 Verifying the presence of a .lock file.
+
+17:54:19	 Verifying the presence of a .finished file.
+
+17:54:19	 Skipping file: 2274_2000.png.
+
+17:54:19	 Trying to load images from folder: /home/sacha/Population/in/.
+
+17:54:19	 Entering loading procedure.
+
+17:54:19	 Accessing the results folder.
+
+17:54:19	 Verifying the presence of a .lock file.
+
+17:54:19	 Verifying the presence of a .finished file.
+
+17:54:19	 Skipping file: 2274_4000.png.
+
+17:54:19	 Entering loading procedure.
+
+17:54:19	 Accessing the results folder.
+
+17:54:19	 Verifying the presence of a .lock file.
+
+17:54:19	 Verifying the presence of a .finished file.
+
+17:54:19	 Skipping file: 2274_5000.png.
+
+17:54:19	 Entering loading procedure.
+
+17:54:19	 Accessing the results folder.
+
+17:54:19	 Verifying the presence of a .lock file.
+
+17:54:19	 Verifying the presence of a .finished file.
+
+17:54:19	 Skipping file: 2274_3000.png.
+
+17:54:19	 Entering loading procedure.
+
+17:54:19	 Accessing the results folder.
+
+17:54:19	 Verifying the presence of a .lock file.
+
+17:54:19	 Verifying the presence of a .finished file.
+
+17:54:19	 Skipping file: 2274_6000.png.
+
+17:54:19	 Entering loading procedure.
+
+17:54:19	 Accessing the results folder.
+
+17:54:19	 Verifying the presence of a .lock file.
+
+17:54:19	 Verifying the presence of a .finished file.
+
+17:54:19	 Skipping file: 2274_7000.png.
+
+17:54:19	 Entering loading procedure.
+
+17:54:19	 Accessing the results folder.
+
+17:54:19	 Verifying the presence of a .lock file.
+
+17:54:19	 Verifying the presence of a .finished file.
+
+17:54:19	 Skipping file: 2274_8000.png.
+
+17:54:19	 Entering loading procedure.
+
+17:54:19	 Accessing the results folder.
+
+17:54:19	 Verifying the presence of a .lock file.
+
+17:54:19	 Skipping file: 2274_9000.png.
+
+17:54:19	 Entering loading procedure.
+
+17:54:19	 Accessing the results folder.
+
+17:54:19	 Verifying the presence of a .lock file.
+
+17:54:19	 Skipping file: 2274_10000.png.
+
+17:54:19	 Entering loading procedure.
+
+17:54:19	 Accessing the results folder.
+
+17:54:19	 Verifying the presence of a .lock file.
+
+17:54:19	 Skipping file: 2274_11000.png.
+
+17:54:19	 Entering loading procedure.
+
+17:54:19	 Accessing the results folder.
+
+17:54:19	 Verifying the presence of a .lock file.
+
+17:54:19	 Skipping file: 2274_12000.png.
+
+17:54:19	 Entering loading procedure.
+
+17:54:19	 Accessing the results folder.
+
+17:54:19	 Verifying the presence of a .lock file.
+
+17:54:19	 Verifying the presence of a .finished file.
+
+17:54:19	 Skipping file: 2274_1000.png.
+
+17:54:19	 Entering loading procedure.
+
+17:54:19	 Accessing the results folder.
+
+17:54:19	 Verifying the presence of a .lock file.
+
+17:54:19	 Verifying the presence of a .finished file.
+
+17:54:19	 Skipping file: 2274_2000.png.
+
+17:54:19	 Trying to load images from folder: /home/sacha/Population/in/.
+
+17:54:19	 Entering loading procedure.
+
+17:54:19	 Accessing the results folder.
+
+17:54:19	 Verifying the presence of a .lock file.
+
+17:54:19	 Verifying the presence of a .finished file.
+
+17:54:19	 Skipping file: 2274_4000.png.
+
+17:54:19	 Entering loading procedure.
+
+17:54:19	 Accessing the results folder.
+
+17:54:19	 Verifying the presence of a .lock file.
+
+17:54:19	 Verifying the presence of a .finished file.
+
+17:54:19	 Skipping file: 2274_5000.png.
+
+17:54:19	 Entering loading procedure.
+
+17:54:19	 Accessing the results folder.
+
+17:54:19	 Verifying the presence of a .lock file.
+
+17:54:19	 Verifying the presence of a .finished file.
+
+17:54:19	 Skipping file: 2274_3000.png.
+
+17:54:19	 Entering loading procedure.
+
+17:54:19	 Accessing the results folder.
+
+17:54:19	 Verifying the presence of a .lock file.
+
+17:54:19	 Verifying the presence of a .finished file.
+
+17:54:19	 Skipping file: 2274_6000.png.
+
+17:54:19	 Entering loading procedure.
+
+17:54:19	 Accessing the results folder.
+
+17:54:19	 Verifying the presence of a .lock file.
+
+17:54:19	 Verifying the presence of a .finished file.
+
+17:54:19	 Skipping file: 2274_7000.png.
+
+17:54:19	 Entering loading procedure.
+
+17:54:19	 Accessing the results folder.
+
+17:54:19	 Verifying the presence of a .lock file.
+
+17:54:19	 Verifying the presence of a .finished file.
+
+17:54:19	 Skipping file: 2274_8000.png.
+
+17:54:19	 Entering loading procedure.
+
+17:54:19	 Accessing the results folder.
+
+17:54:19	 Verifying the presence of a .lock file.
+
+17:54:19	 Skipping file: 2274_9000.png.
+
+17:54:19	 Entering loading procedure.
+
+17:54:19	 Accessing the results folder.
+
+17:54:19	 Verifying the presence of a .lock file.
+
+17:54:19	 Skipping file: 2274_10000.png.
+
+17:54:19	 Entering loading procedure.
+
+17:54:19	 Accessing the results folder.
+
+17:54:19	 Verifying the presence of a .lock file.
+
+17:54:19	 Skipping file: 2274_11000.png.
+
+17:54:19	 Entering loading procedure.
+
+17:54:19	 Accessing the results folder.
+
+17:54:19	 Verifying the presence of a .lock file.
+
+17:54:19	 Skipping file: 2274_12000.png.
+
+17:54:19	 Entering loading procedure.
+
+17:54:19	 Accessing the results folder.
+
+17:54:19	 Verifying the presence of a .lock file.
+
+17:54:19	 Verifying the presence of a .finished file.
+
+17:54:19	 Skipping file: 2274_1000.png.
+
+17:54:19	 Entering loading procedure.
+
+17:54:19	 Accessing the results folder.
+
+17:54:19	 Verifying the presence of a .lock file.
+
+17:54:19	 Verifying the presence of a .finished file.
+
+17:54:19	 Skipping file: 2274_2000.png.
+
+17:54:19	 ======================= PROGRAM SUCCESSFULLY TERMINATED =======================.
+
+17:56:57	 Trying to load images from folder: /home/sacha/Population/in/.
+
+17:56:57	 Entering loading procedure.
+
+17:56:57	 Accessing the results folder.
+
+17:56:57	 Verifying the presence of a .lock file.
+
+17:56:57	 Skipping file: 2274_10000.png.
+
+17:56:57	 Entering loading procedure.
+
+17:56:57	 Accessing the results folder.
+
+17:56:57	 Verifying the presence of a .lock file.
+
+17:56:57	 Skipping file: 2274_11000.png.
+
+17:56:57	 Entering loading procedure.
+
+17:56:57	 Accessing the results folder.
+
+17:56:57	 Verifying the presence of a .lock file.
+
+17:56:57	 Skipping file: 2274_12000.png.
+
+17:56:57	 Entering loading procedure.
+
+17:56:57	 Accessing the results folder.
+
+17:56:57	 Verifying the presence of a .lock file.
+
+17:56:57	 Verifying the presence of a .finished file.
+
+17:56:57	 Skipping file: 2274_1000.png.
+
+17:56:57	 Entering loading procedure.
+
+17:56:57	 Accessing the results folder.
+
+17:56:57	 Verifying the presence of a .lock file.
+
+17:56:57	 Verifying the presence of a .finished file.
+
+17:56:57	 Skipping file: 2274_2000.png.
+
+17:56:57	 Trying to load images from folder: /home/sacha/Population/in/.
+
+17:56:57	 Entering loading procedure.
+
+17:56:57	 Accessing the results folder.
+
+17:56:57	 Verifying the presence of a .lock file.
+
+17:56:57	 Verifying the presence of a .finished file.
+
+17:56:57	 Skipping file: 2274_4000.png.
+
+17:56:57	 Entering loading procedure.
+
+17:56:57	 Accessing the results folder.
+
+17:56:57	 Verifying the presence of a .lock file.
+
+17:56:57	 Verifying the presence of a .finished file.
+
+17:56:57	 Skipping file: 2274_5000.png.
+
+17:56:57	 Entering loading procedure.
+
+17:56:57	 Accessing the results folder.
+
+17:56:57	 Verifying the presence of a .lock file.
+
+17:56:57	 Verifying the presence of a .finished file.
+
+17:56:57	 Skipping file: 2274_3000.png.
+
+17:56:57	 Entering loading procedure.
+
+17:56:57	 Accessing the results folder.
+
+17:56:57	 Verifying the presence of a .lock file.
+
+17:56:57	 Verifying the presence of a .finished file.
+
+17:56:57	 Skipping file: 2274_6000.png.
+
+17:56:57	 Entering loading procedure.
+
+17:56:57	 Accessing the results folder.
+
+17:56:57	 Verifying the presence of a .lock file.
+
+17:56:57	 Verifying the presence of a .finished file.
+
+17:56:57	 Skipping file: 2274_7000.png.
+
+17:56:57	 Entering loading procedure.
+
+17:56:57	 Accessing the results folder.
+
+17:56:57	 Verifying the presence of a .lock file.
+
+17:56:57	 Verifying the presence of a .finished file.
+
+17:56:57	 Skipping file: 2274_8000.png.
+
+17:56:57	 Entering loading procedure.
+
+17:56:57	 Accessing the results folder.
+
+17:56:57	 Verifying the presence of a .lock file.
+
+17:56:57	 Verifying the presence of a .finished file.
+
+17:56:57	 Skipping file: 2274_9000.png.
+
+17:56:57	 Entering loading procedure.
+
+17:56:57	 Accessing the results folder.
+
+17:56:57	 Verifying the presence of a .lock file.
+
+17:56:57	 Skipping file: 2274_10000.png.
+
+17:56:57	 Entering loading procedure.
+
+17:56:57	 Accessing the results folder.
+
+17:56:57	 Verifying the presence of a .lock file.
+
+17:56:57	 Skipping file: 2274_11000.png.
+
+17:56:57	 Entering loading procedure.
+
+17:56:57	 Accessing the results folder.
+
+17:56:57	 Verifying the presence of a .lock file.
+
+17:56:57	 Skipping file: 2274_12000.png.
+
+17:56:57	 Entering loading procedure.
+
+17:56:57	 Accessing the results folder.
+
+17:56:57	 Verifying the presence of a .lock file.
+
+17:56:57	 Verifying the presence of a .finished file.
+
+17:56:57	 Skipping file: 2274_1000.png.
+
+17:56:57	 Entering loading procedure.
+
+17:56:57	 Accessing the results folder.
+
+17:56:57	 Verifying the presence of a .lock file.
+
+17:56:57	 Verifying the presence of a .finished file.
+
+17:56:57	 Skipping file: 2274_2000.png.
+
+17:56:57	 Trying to load images from folder: /home/sacha/Population/in/.
+
+17:56:57	 Entering loading procedure.
+
+17:56:57	 Accessing the results folder.
+
+17:56:57	 Verifying the presence of a .lock file.
+
+17:56:57	 Verifying the presence of a .finished file.
+
+17:56:57	 Skipping file: 2274_4000.png.
+
+17:56:57	 Entering loading procedure.
+
+17:56:57	 Accessing the results folder.
+
+17:56:57	 Verifying the presence of a .lock file.
+
+17:56:57	 Verifying the presence of a .finished file.
+
+17:56:57	 Skipping file: 2274_5000.png.
+
+17:56:57	 Entering loading procedure.
+
+17:56:57	 Accessing the results folder.
+
+17:56:57	 Verifying the presence of a .lock file.
+
+17:56:57	 Verifying the presence of a .finished file.
+
+17:56:57	 Skipping file: 2274_3000.png.
+
+17:56:57	 Entering loading procedure.
+
+17:56:57	 Accessing the results folder.
+
+17:56:57	 Verifying the presence of a .lock file.
+
+17:56:57	 Verifying the presence of a .finished file.
+
+17:56:57	 Skipping file: 2274_6000.png.
+
+17:56:57	 Entering loading procedure.
+
+17:56:57	 Accessing the results folder.
+
+17:56:57	 Verifying the presence of a .lock file.
+
+17:56:57	 Verifying the presence of a .finished file.
+
+17:56:57	 Skipping file: 2274_7000.png.
+
+17:56:57	 Entering loading procedure.
+
+17:56:57	 Accessing the results folder.
+
+17:56:57	 Verifying the presence of a .lock file.
+
+17:56:57	 Verifying the presence of a .finished file.
+
+17:56:57	 Skipping file: 2274_8000.png.
+
+17:56:57	 Entering loading procedure.
+
+17:56:57	 Accessing the results folder.
+
+17:56:57	 Verifying the presence of a .lock file.
+
+17:56:57	 Verifying the presence of a .finished file.
+
+17:56:57	 Skipping file: 2274_9000.png.
+
+17:56:57	 Entering loading procedure.
+
+17:56:57	 Accessing the results folder.
+
+17:56:57	 Verifying the presence of a .lock file.
+
+17:56:57	 Skipping file: 2274_10000.png.
+
+17:56:57	 Entering loading procedure.
+
+17:56:57	 Accessing the results folder.
+
+17:56:57	 Verifying the presence of a .lock file.
+
+17:56:57	 Skipping file: 2274_11000.png.
+
+17:56:57	 Entering loading procedure.
+
+17:56:57	 Accessing the results folder.
+
+17:56:57	 Verifying the presence of a .lock file.
+
+17:56:57	 Skipping file: 2274_12000.png.
+
+17:56:57	 Entering loading procedure.
+
+17:56:57	 Accessing the results folder.
+
+17:56:57	 Verifying the presence of a .lock file.
+
+17:56:57	 Verifying the presence of a .finished file.
+
+17:56:57	 Skipping file: 2274_1000.png.
+
+17:56:57	 Entering loading procedure.
+
+17:56:57	 Accessing the results folder.
+
+17:56:57	 Verifying the presence of a .lock file.
+
+17:56:57	 Verifying the presence of a .finished file.
+
+17:56:57	 Skipping file: 2274_2000.png.
+
+17:56:57	 ======================= PROGRAM SUCCESSFULLY TERMINATED =======================.
+
