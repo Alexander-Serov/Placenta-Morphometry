@@ -148,7 +148,6 @@ namespace {
 int main(int argc, char *argv[])
 {
 	
-	
 	pop::CollectorExecutionInformationSingleton::getInstance()->setActivate(true);
     try
 	{
@@ -164,10 +163,10 @@ int main(int argc, char *argv[])
 		// Starting the timer (is it still used?)
 		tbegin=time(NULL);
 
-		log_steps("======================= PROGRAM STARTED =======================", "general");
-
 		// Choosing the input folder
 		choose_input_folder(fileInDir, mainDir, argc, argv);
+
+		log_steps("======================= PROGRAM STARTED =======================", "general");
 		
 		// Creating the results folder
 		create_results_folder(fileInDir, resultDir);

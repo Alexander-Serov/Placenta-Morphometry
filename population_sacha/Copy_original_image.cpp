@@ -2,6 +2,8 @@
 
 #include <string>		// std::string
 #include <sstream>		// std::stringstream
+#include <cstdlib>		// for `system`
+
 #include "Global_variables.h"
 
 

@@ -9,8 +9,11 @@
 
 
 Run::Run()
+	: iLeft(0),
+	iRight(0),
+	j(0)
 {
-	Run::Run(0,0,0);
+	// Run::Run(0,0,0);
 }
 
 

@@ -57,6 +57,7 @@ void choose_input_folder(	char*& fileInDir,
 	getcwd(tmpStr, FILENAME_LENGTH);
 	s_tmp = tmpStr;
 	s_tmp += DIRECTORY_SEPARATOR;
+
 	// Replacing backslashes with slashes for linux
 	size_t start_pos=0;
 	while((start_pos = s_tmp.find("\\", start_pos)) != std::string::npos) 
@@ -77,7 +78,21 @@ void choose_input_folder(	char*& fileInDir,
 	}
 	else
 	{
-		fileInDir=argv[1];
+		s_tmp = argv[1];
+		
+		// Make sure that the folder ends with a slash
+		if (*s_tmp.rbegin() != DIRECTORY_SEPARATOR[0])
+		{
+			s_tmp += DIRECTORY_SEPARATOR;
+		}
+
+		// Copy the result to fileInDir
+		copy(s_tmp.begin(), s_tmp.end(), fileInDir);
+
+		// Add string end
+		fileInDir[s_tmp.size()] = '\0';
+		
+
 		ss_tmp.clear();
 		ss_tmp.str(string());
 	}		
