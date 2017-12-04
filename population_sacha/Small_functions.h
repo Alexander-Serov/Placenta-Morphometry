@@ -28,7 +28,7 @@ void perimeter(pop::VecF64 &, pop::Mat2UI32 &);
 void conditionally_replace_color_1_by_color_2(pop::Mat2UI8 &img_original, unsigned char old_color, unsigned char new_color, 
 						   float area_threshold);
 void saveFileBinary(pop::Mat2UI8 img, std::string fileDirectory, std::string fileName);
-void saveFileColor(const pop::Mat2RGBUI8 &, const std::string, const std::string);
+void saveFileColor(pop::Mat2RGBUI8, const std::string, const std::string);
 void saveFileColor(const pop::Mat2UI8 &img, const std::string fileDirectory, const std::string fileName);
 void save_histogram (const pop::Mat2F64 &histogram, std::string fileDirectory, std::string fileName);
 std::string string_output_picutre_number();

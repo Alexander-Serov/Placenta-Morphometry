@@ -1,6 +1,7 @@
 
 #include "Global_variables.h"
 #include "Population.h"
+#include "core/algorithm/GeometricalTransformation.h"
 #include <string>
 #include "Small_functions.h"
 
@@ -352,6 +353,20 @@ void labelObjet(Mat2RGBUI8& img_colored_regions, const Mat2UI32& img_labeled_reg
 	log_steps();
 }
 
+void restoreRotation(pop::Mat2UI8 &img)
+{
+// Restore image rotation before saving to make it correspond to the input
+	img = pop::GeometricalTransformation::mirror(img, 0);
+	img = pop::GeometricalTransformation::rotateMultPi_2(img, -1);
+}
+
+void restoreRotation(pop::Mat2RGBUI8 &img)
+{
+// Restore image rotation before saving to make it correspond to the input
+	img = pop::GeometricalTransformation::mirror(img, 0);
+	img = pop::GeometricalTransformation::rotateMultPi_2(img, -1);
+}
+
  void saveFileBinary(pop::Mat2UI8 img, std::string fileDirectory, std::string fileName)
  {
 	 // Rescaling the binary picture to 255 at the maximum and zero at the minimum
@@ -374,10 +389,11 @@ void labelObjet(Mat2RGBUI8& img_colored_regions, const Mat2UI32& img_labeled_reg
 	 tmpStr[s_tmp.size()] = '\0';
 
 	 // Saving
+	 restoreRotation(img);
 	 img.save(tmpStr);
  }
 
- void saveFileColor(const Mat2RGBUI8 &img, const string fileDirectory, const string fileName)
+ void saveFileColor(pop::Mat2RGBUI8 img, const string fileDirectory, const string fileName)
  {
 	 stringstream ss_tmp;
 	 string s_tmp;
@@ -386,6 +402,8 @@ void labelObjet(Mat2RGBUI8& img_colored_regions, const Mat2UI32& img_labeled_reg
 	 s_tmp=ss_tmp.str();
 	 copy(s_tmp.begin(), s_tmp.end(), tmpStr);
 	 tmpStr[s_tmp.size()] = '\0';
+
+	 restoreRotation(img);
 	 img.save(tmpStr);
  }
 
@@ -406,6 +424,8 @@ void labelObjet(Mat2RGBUI8& img_colored_regions, const Mat2UI32& img_labeled_reg
 	 s_tmp=ss_tmp.str();
 	 copy(s_tmp.begin(), s_tmp.end(), tmpStr);
 	 tmpStr[s_tmp.size()] = '\0';
+
+	 restoreRotation(color_image);
 	 color_image.save(tmpStr);
  }
 

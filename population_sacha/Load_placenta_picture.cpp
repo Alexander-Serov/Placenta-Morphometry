@@ -1,4 +1,5 @@
 #include"Population.h"
+#include "core/algorithm/GeometricalTransformation.h"
 #include<iostream>
 #include<string>
 #include"Global_variables.h"
@@ -147,6 +148,10 @@ int load_placenta_picture(string& img_name_withoutExtension,
 	try
 	{															
 		subImg.load(img_In); 
+
+		// // Mirror and rotate image
+		// subImg = pop::GeometricalTransformation::mirror(subImg, 0);
+
 	}
 	catch (exception &e)
 	{
