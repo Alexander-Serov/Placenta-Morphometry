@@ -13,7 +13,7 @@
 #ifdef _WIN32
 	#define DIRECTORY_SEPARATOR "\\"
 	#define DIRECTORY_SEPARATOR_SEARCH "/\\"
-/*	
+/*
 	#include"direntvc.h"
 	#include <direct.h>
     #define getcwd _getcwd
@@ -22,32 +22,32 @@
 	#include"population_sacha\Create_results_folder.h"
 	#include"population_sacha\Discriminate_capillaries_from_IVS.h"
 	#include"population_sacha\Fill_holes_in_the_villi.h"
-	#include"population_sacha\Initial_segmentation.h"	
+	#include"population_sacha\Initial_segmentation.h"
 	#include"population_sacha\Load_placenta_picture.h"
 	#include"population_sacha\Log_steps.h"
-	#include"population_sacha\Remove_noise.h"	
+	#include"population_sacha\Remove_noise.h"
 	#include"population_sacha\Small_functions.h"
 	#include"population_sacha\Statistics_placenta.h"
 	#define SHELL_COPY_COMMAND "copy"
 //	#define DEFAULT_RESULTS_DIRECTORY ".//results//"
 */
-#elif __linux__
+#else
 	#define DIRECTORY_SEPARATOR "/"
 	#define DIRECTORY_SEPARATOR_SEARCH "/"
 /*
 	#include"dirent.h"
 	#include"unistd.h"
 	#include"population_sacha/Choose_input_folder.h"
-	#include"population_sacha/Create_dot_finished_file.h"	
+	#include"population_sacha/Create_dot_finished_file.h"
 	#include"population_sacha/Create_results_folder.h"
 	#include"population_sacha/Discriminate_capillaries_from_IVS.h"
 	#include"population_sacha/Fill_holes_in_the_villi.h"
 	#include"population_sacha/Initial_segmentation.h"
 	#include"population_sacha/Load_placenta_picture.h"
 	#include"population_sacha/Log_steps.h"
-	#include"population_sacha/Remove_noise.h"	
+	#include"population_sacha/Remove_noise.h"
 	#include"population_sacha/Small_functions.h"
-	#include"population_sacha/Statistics_placenta.h"	
+	#include"population_sacha/Statistics_placenta.h"
 	#define SHELL_COPY_COMMAND "cp"
 //	#define DEFAULT_RESULTS_DIRECTORY ".\results\"
 */
@@ -76,7 +76,7 @@ void create_results_folder(char *fileInDir,
 
 	// Initialization
 	tmpStr = new char [FILENAME_LENGTH];
-	
+
 	string fileResult (fileInDir);
 	unsigned found = fileResult.find_last_of(DIRECTORY_SEPARATOR_SEARCH);
 	fileResult=fileResult.substr(0,found);
@@ -97,7 +97,7 @@ void create_results_folder(char *fileInDir,
 	//throw 20;
 
 	DIR *dir2;
-	dir2 = opendir(resultDir); 
+	dir2 = opendir(resultDir);
 
 	// Clearing the results folder if necessary
 	if(dir2!=NULL && bl_clear_results_folder)
@@ -111,16 +111,16 @@ void create_results_folder(char *fileInDir,
 		tmpStr[s_tmp.size()] = '\0';
 		system(tmpStr);
 	}
-	else 
+	else
 	{
 		closedir(dir2);	// else just close the reference to the folder
 	}
 
 	// (Re-)Creating the results folder if missing
-	dir2 = opendir(resultDir); 
+	dir2 = opendir(resultDir);
 	if(dir2==NULL)
 	{
-		//mkdir(resultDir);		
+		//mkdir(resultDir);
 		ss_tmp.clear();
 		ss_tmp.str(string());
 		ss_tmp<<"mkdir "<<resultDir;
@@ -130,9 +130,9 @@ void create_results_folder(char *fileInDir,
 		system(tmpStr);
 	}
 
-	cout<<"Results are output into: "<<endl<<resultDir<<endl<<endl;	
+	cout<<"Results are output into: "<<endl<<resultDir<<endl<<endl;
 	closedir(dir2);
-	
+
 }
 
 

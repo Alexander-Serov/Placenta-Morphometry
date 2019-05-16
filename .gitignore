@@ -1,3 +1,13 @@
+
+CImg.h
+CMakeCache.txt
+CMakeFiles/
+Makefile
+cmake_install.cmake
+core/
+in/
+test
+
 # Prerequisites
 *.d
 

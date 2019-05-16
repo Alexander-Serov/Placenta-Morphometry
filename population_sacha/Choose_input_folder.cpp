@@ -17,9 +17,9 @@
 /*
 
 	#include <direct.h>
-    
+
 	*/
-#elif __linux__
+#elif __linux__ || defined __APPLE__
 	#define DIRECTORY_SEPARATOR "/"
 
 	#include"dirent.h"		// For working with folders
@@ -38,7 +38,7 @@ using namespace std;
 
 
 void choose_input_folder(	char*& fileInDir,
-							char*& mainDir, 
+							char*& mainDir,
 							int argc,
 							char *argv[]
 							)
@@ -49,7 +49,7 @@ void choose_input_folder(	char*& fileInDir,
 	string s_tmp;
 
 	stringstream ss_tmp;
-	
+
 	// Initialization
 	tmpStr = new char [FILENAME_LENGTH];
 
@@ -60,7 +60,7 @@ void choose_input_folder(	char*& fileInDir,
 
 	// Replacing backslashes with slashes for linux
 	size_t start_pos=0;
-	while((start_pos = s_tmp.find("\\", start_pos)) != std::string::npos) 
+	while((start_pos = s_tmp.find("\\", start_pos)) != std::string::npos)
 	{
 		s_tmp.replace(start_pos, 1, "/");
 		start_pos += 1;
@@ -79,7 +79,7 @@ void choose_input_folder(	char*& fileInDir,
 	else
 	{
 		s_tmp = argv[1];
-		
+
 		// Make sure that the folder ends with a slash
 		if (*s_tmp.rbegin() != DIRECTORY_SEPARATOR[0])
 		{
@@ -91,11 +91,11 @@ void choose_input_folder(	char*& fileInDir,
 
 		// Add string end
 		fileInDir[s_tmp.size()] = '\0';
-		
+
 
 		ss_tmp.clear();
 		ss_tmp.str(string());
-	}		
+	}
 	cout<<"Loading input images from: "<<endl<<fileInDir<<endl<<endl;
 
 

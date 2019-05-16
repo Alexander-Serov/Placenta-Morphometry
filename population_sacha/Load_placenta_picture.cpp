@@ -4,14 +4,14 @@
 #include<string>
 #include"Global_variables.h"
 #include<errno.h>
-#include "Log_steps.h"	
+#include "Log_steps.h"
 #include "Statistics_placenta.h"
 
 //#include<fstream>
 //#include<sys/types.h>
 //#include<errno.h>
 //#include<algorithm>
-//#include<utility>  
+//#include<utility>
 //#include<ctime>
 //#include"CImg.h"
 
@@ -19,7 +19,7 @@
 // Platform-specific commands
 #ifdef _WIN32
 	#include"direntvc.h"
-#elif __linux__
+#else
 	#include"dirent.h"
 #endif
 
@@ -45,13 +45,13 @@ int load_placenta_picture(string& img_name_withoutExtension,
 	vector <string> nameFileLock;
 	stringstream ss_tmp;
 	char *tmpStr = new char[FILENAME_LENGTH];
-	
+
 	// Selecting a file in the input folder
-	
+
 	size_t place;
 
 	log_steps("Entering loading procedure", "general");
-	
+
 	img_name_withoutExtension=img_name;
 	if(img_name.compare(img_name.size()-5,5,".lock")==0)
 	{
@@ -84,11 +84,11 @@ int load_placenta_picture(string& img_name_withoutExtension,
 		extension=".tiff";
 		img_name_withoutExtension = img_name_withoutExtension.erase(place,img_name_withoutExtension.length()-1);
 	}
-	
+
 	log_steps("Accessing the results folder", "general");
 	try{
 		// Verifying in the results folder whether the slected input picture needs to be processed
-		DIR *dir2 = opendir(resultDir); 
+		DIR *dir2 = opendir(resultDir);
 		closedir(dir2);
 		if(dir2==NULL)
 		{
@@ -98,21 +98,21 @@ int load_placenta_picture(string& img_name_withoutExtension,
 			return 0;
 		}
 	}
-	catch (const std::exception& e) 
+	catch (const std::exception& e)
 	{
 	//	log_steps("Encountered exception: " + (string)e.what() + ". Error number: "+strerror(errno), "general");
 		return 0;
 	}
-	catch (...) 
+	catch (...)
 	{
 		log_steps("Caught an unknown exception", "general");
 		return 0;
 	}
-						
+
 	log_steps("Verifying the presence of a .lock file", "general");
 	// Verifying whether this picture is locked by another application instance
 	lock_file_name=resultDir+img_name_withoutExtension+".lock";
-	if (FILE *temp_file = fopen(lock_file_name.c_str(), "r")) 
+	if (FILE *temp_file = fopen(lock_file_name.c_str(), "r"))
 	{
 		fclose(temp_file);
 		return 0;
@@ -121,7 +121,7 @@ int load_placenta_picture(string& img_name_withoutExtension,
 	log_steps("Verifying the presence of a .finished file", "general");
 	// Verifying whether this picture has been already processed
 	finished_file_name=resultDir+img_name_withoutExtension+".finished";
-	if (FILE *temp_file = fopen(finished_file_name.c_str(), "r")) 
+	if (FILE *temp_file = fopen(finished_file_name.c_str(), "r"))
 	{
 		fclose(temp_file);
 		return 0;
@@ -144,10 +144,10 @@ int load_placenta_picture(string& img_name_withoutExtension,
 	// Loading the picture
 	log_steps("Loading subImage");
 	log_steps("Loading the picture itself", "general");
-	img_In = fileInDir + img_name; 
+	img_In = fileInDir + img_name;
 	try
-	{															
-		subImg.load(img_In); 
+	{
+		subImg.load(img_In);
 
 		// // Mirror and rotate image
 		// subImg = pop::GeometricalTransformation::mirror(subImg, 0);

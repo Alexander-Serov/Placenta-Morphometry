@@ -87,8 +87,10 @@ extern const bool bl_extract_contours;
 // Platform-specific commands
 #ifdef _WIN32
 	#define REMOVE_FOLDER_COMMAND "rmdir /S /Q "
-#elif __linux__
+	#include"population_sacha\Log_steps.h"
+#else
 	#define REMOVE_FOLDER_COMMAND "rm -rf "
+	#include"population_sacha/Log_steps.h"
 #endif
 
 

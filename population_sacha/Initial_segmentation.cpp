@@ -17,9 +17,9 @@
 // Platform-specific commands
 #ifdef _WIN32
 //	#include"direntvc.h"
-	#include"population_sacha\Log_steps.h"	
+	#include"population_sacha\Log_steps.h"
 //	#include"population_sacha\Statistics_placenta.h"
-#elif __linux__
+#else
 //	#include"dirent.h"
 	#include"population_sacha/Log_steps.h"
 //	#include"population_sacha/Statistics_placenta.h"
@@ -28,7 +28,7 @@
 
 
 
-using namespace std; 
+using namespace std;
 
 
 
@@ -39,9 +39,9 @@ using namespace std;
 // The scheme described in the thesis is a bit simplified.
 // But do we actually need two matrices ?
 
-void initial_segmentation(Mat2RGBUI8& subImg, 
-						  Mat2UI8& three_regions_segmentation_matrix 
-						  //const string resultDir, 
+void initial_segmentation(Mat2RGBUI8& subImg,
+						  Mat2UI8& three_regions_segmentation_matrix
+						  //const string resultDir,
 						  //const string img_name_withoutExtension
 						  )
 
@@ -81,7 +81,7 @@ void initial_segmentation(Mat2RGBUI8& subImg,
 	Border = Mat2UI8 (subImg.sizeI(),subImg.sizeJ());
 	RBCs_matrix = Mat2UI8 (subImg.sizeI(),subImg.sizeJ());
 	h_red = Mat2F64(histogram_bins_number,2);
-	h_blue = Mat2F64(histogram_bins_number,2);	
+	h_blue = Mat2F64(histogram_bins_number,2);
 	red_histogram = Mat2F64 (2, histogram_bins_number+1);
 	blue_histogram = Mat2F64 (2, histogram_bins_number+1);
 
@@ -91,7 +91,7 @@ void initial_segmentation(Mat2RGBUI8& subImg,
 	IVS_matrix = Mat2UI8 (subImg.sizeI(),subImg.sizeJ());
 	maxLocal = Mat2F64(3,2);
 	red = Mat2F64 (subImg.sizeI(),subImg.sizeJ());
-	
+
 
 	log_steps("Performing initial segmentation");
 
@@ -107,14 +107,14 @@ void initial_segmentation(Mat2RGBUI8& subImg,
 		}
 	}
 
-	
+
 	// Looking for the local maxima of the histograms
 	log_steps("Calculating segmentation thresholds of the 'red' and 'blue' matrices");
 	thresholds_location_red = find_thresholds_for_a_matrix (red, red_histogram);		// Gives an array of two numbers for the two thresholds
 	thresholds_location_blue = find_thresholds_for_a_matrix (blue, blue_histogram);
 	log_steps();		// End: "Calculating segmentation thresholds of the 'red' and 'blue' matrices"
-	
-	
+
+
 	// Thresholding the 'red' and the 'blue' matrices
 	str_stream << "Thresholding the 'red' matrix with a threshold set at " << thresholds_location_red(1) <<
 		" and the 'blue' matrix with a threshold at " << thresholds_location_blue(0);
@@ -140,7 +140,7 @@ void initial_segmentation(Mat2RGBUI8& subImg,
 	}
 
 	log_steps();	// End: Thresholding
-	
+
 
 	// Smoothing the boundaries of the obtained IVS and RBC regions, so that the villous regions do not get patchy
 	log_steps("Smoothing out RBC regions");
@@ -161,7 +161,7 @@ void initial_segmentation(Mat2RGBUI8& subImg,
 	{
 		for(int j=0;j<subImg.sizeJ();j++)
 		{
-			if(IVS_matrix(i,j)>0 || RBCs_matrix(i,j)>0)	
+			if(IVS_matrix(i,j)>0 || RBCs_matrix(i,j)>0)
 			{
 				villous_stroma_matrix(i,j)=0;
 			}
@@ -180,7 +180,7 @@ void initial_segmentation(Mat2RGBUI8& subImg,
 	log_steps();		// "Smoothing out RBC regions"
 	*/
 
-	
+
 	// The initial segmentation is finished
 	// Combining the obtained components in the same picture
 	// All pixels that are not one of these components are set to the third one
@@ -192,7 +192,7 @@ void initial_segmentation(Mat2RGBUI8& subImg,
 	{
 		for(int j=0;j<subImg.sizeJ();j++)
 		{
-			if(RBCs_matrix(i,j)>0)	
+			if(RBCs_matrix(i,j)>0)
 			{
 				three_regions_segmentation_matrix(i,j)=int_fetal_RBCs_pixel_color;
 				villous_stroma_matrix(i,j)=0;
@@ -209,7 +209,7 @@ void initial_segmentation(Mat2RGBUI8& subImg,
 			}
 		}
 	}
-	
+
 
 
 
@@ -225,21 +225,21 @@ void initial_segmentation(Mat2RGBUI8& subImg,
 	saveFileColor(three_regions_segmentation_matrix, resultDir, str_img_name_withoutExtension + string_output_picutre_number()+"_Initial_segmentation.png");
 	log_steps ();		// "Saving thresholding results";
 
-	
-	
+
+
 
 
 	// Cleaning up
 	blue.clear();
 	Border.clear();
 	RBCs_matrix.clear();
-	h_blue.clear();	
+	h_blue.clear();
 	h_red.clear();
 	IVS_matrix.clear();
 	red.clear();
 	villous_stroma_matrix.clear();
 
-	
+
 	log_steps();		// "Performing initial segmentation";
 
 }

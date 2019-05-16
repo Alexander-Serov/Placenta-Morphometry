@@ -10,7 +10,7 @@
 // Platform-specific commands
 #ifdef _WIN32
 	#define SHELL_COPY_COMMAND "copy"
-#elif __linux__
+#else
 	#define SHELL_COPY_COMMAND "cp"
 #endif
 

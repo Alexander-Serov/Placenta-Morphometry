@@ -1,12 +1,17 @@
 cmake_minimum_required(VERSION 2.6)
 
-               
+
 #Déclaration du projet
 project(plac_morph)
 
 include_directories(.)
 set(EXECUTABLE_OUTPUT_PATH bin/${CMAKE_BUILD_TYPE})
 SET(CMAKE_CXX_FLAGS "-DUNICODE=1")
+
+# Include X11 libraries (for Mac)
+find_package(X11 REQUIRED)
+link_libraries(${X11_LIBRARIES})
+include_directories(${X11_INCLUDE_DIR})
 
 # # Static link of -libgcc and -libstdc++ libraries
 # set(CMAKE_EXE_LINKER_FLAGS " -static")
@@ -29,26 +34,26 @@ add_executable(
   plac_morph
   ${source_files}
   main.cpp
-  core/dependency/pugiconfig.hpp 
-  core/dependency/CImg.h 
-  core/dependency/ConvertorCImg.h 
-  core/dependency/pugixml.hpp 
-  core/dependency/fparser.hh 
-  core/dependency/fpconfig.hh 
-  core/dependency/fptypes.hh 
-  core/dependency/MTRand.h 
-  core/dependency/lodepng.h 
-  core/dependency/bipmap.h 
-  core/dependency/jpgd.h 
-  core/dependency/jpge.h 
-  core/dependency/tinythread.h 
-  core/dependency/fparser.cpp 
-  core/dependency/MTRand.cpp 
-  core/dependency/pugixml.cpp 
-  core/dependency/lodepng.cpp 
-  core/dependency/jpgd.cpp 
-  core/dependency/jpge.cpp 
-  core/dependency/tinythread.cpp 
+  core/dependency/pugiconfig.hpp
+  core/dependency/CImg.h
+  core/dependency/ConvertorCImg.h
+  core/dependency/pugixml.hpp
+  core/dependency/fparser.hh
+  core/dependency/fpconfig.hh
+  core/dependency/fptypes.hh
+  core/dependency/MTRand.h
+  core/dependency/lodepng.h
+  core/dependency/bipmap.h
+  core/dependency/jpgd.h
+  core/dependency/jpge.h
+  core/dependency/tinythread.h
+  core/dependency/fparser.cpp
+  core/dependency/MTRand.cpp
+  core/dependency/pugixml.cpp
+  core/dependency/lodepng.cpp
+  core/dependency/jpgd.cpp
+  core/dependency/jpge.cpp
+  core/dependency/tinythread.cpp
 )
 if(UNIX)
 	target_link_libraries(plac_morph GL GLU glut X11 pthread)
