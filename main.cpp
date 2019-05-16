@@ -14,7 +14,7 @@
 #include<algorithm>
 #include<utility>
 #include<ctime>
-#include"CImg.h"
+// #include"CImg/CImg.h"
 #include"population_sacha/Choose_input_folder.h"
 #include"population_sacha/Copy_original_image.h"
 #include"population_sacha/Create_dot_finished_file.h"

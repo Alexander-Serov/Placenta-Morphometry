@@ -89,7 +89,7 @@ int load_placenta_picture(string& img_name_withoutExtension,
 	try{
 		// Verifying in the results folder whether the slected input picture needs to be processed
 		DIR *dir2 = opendir(resultDir);
-		closedir(dir2);
+		
 		if(dir2==NULL)
 		{
 			cout<<"Error opening results folder"<<endl<<endl;
@@ -97,6 +97,7 @@ int load_placenta_picture(string& img_name_withoutExtension,
 			log_steps("Error opening the results folder", "general");
 			return 0;
 		}
+		else closedir(dir2);
 	}
 	catch (const std::exception& e)
 	{

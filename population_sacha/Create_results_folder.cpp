@@ -59,6 +59,7 @@
 
 // External
 extern const bool bl_clear_results_folder;
+extern char* mainDir;
 extern const int FILENAME_LENGTH;
 
 
@@ -91,9 +92,9 @@ fileResult.replace(fileResult.find(s_tmp),s_tmp.length(),DIRECTORY_SEPARATOR);
 found1 = fileResult.find(s_tmp);
 cout<<"It's a loop.";
 }*/
-	string t1= "";
-	t1= t1 + fileInDir + "results" + DIRECTORY_SEPARATOR;
-	copy(t1.begin(), t1.end(), resultDir);
+	string defaultFolder= "";
+	defaultFolder= defaultFolder + mainDir + "results" + DIRECTORY_SEPARATOR;
+	copy(defaultFolder.begin(), defaultFolder.end(), resultDir);
 
 //throw 20;
 
@@ -117,10 +118,7 @@ cout<<"It's a loop.";
 			system(tmpStr);
 		}
 	}
-
-// (Re-)Creating the results folder if missing
-	dir2 = opendir(resultDir);
-	if(dir2==NULL)
+	else // (Re-)Creating the results folder if missing
 	{
 		//mkdir(resultDir);
 		ss_tmp.clear();
@@ -133,7 +131,6 @@ cout<<"It's a loop.";
 	}
 
 	cout<<"Results are output into: "<<endl<<resultDir<<endl<<endl;
-	closedir(dir2);
 
 }
 
