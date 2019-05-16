@@ -19,7 +19,7 @@
 	#include <direct.h>
 
 	*/
-#elif __linux__ || defined __APPLE__
+#elif __linux__ || __APPLE__
 	#define DIRECTORY_SEPARATOR "/"
 
 	#include"dirent.h"		// For working with folders
@@ -71,8 +71,15 @@ void choose_input_folder(	char*& fileInDir,
 
 	if (argc==1)
 	{
-		cout<<"Input folder can be specified as a command line argument";
-		s_tmp = "E:\\05_Modifying_Zhenzhens_project\\population\\mes_images\\in\\";
+		cout<<"Using the default input folder: ";
+		cout << "A different folder can be specified as a command line argument";
+
+		cout << "\n" << argv[0] << "\n";
+		string t1;
+		t1="";
+		t1 = t1 +  mainDir + "in" +  DIRECTORY_SEPARATOR;
+
+		s_tmp = t1;
 		copy(s_tmp.begin(), s_tmp.end(), fileInDir);
 		fileInDir[s_tmp.size()] = '\0';
 	}

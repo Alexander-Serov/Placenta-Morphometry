@@ -4,9 +4,7 @@
 
 
 
-void create_results_folder(char *fileInDir,
-						   char *resultDir
-						   );
+void create_results_folder(char*,char*);
 
 
 

@@ -7,7 +7,7 @@
 #include "Global_variables.h"
 //#include "Population.h"
 
-//using namespace std;
+using namespace std;
 
 //// Global variables - Externally defined
 //extern std::string extension;
@@ -69,15 +69,15 @@ int log_steps(std::string step_description, std::string log_type)
 	// Calculating time difference from the start
 	// elapsed_time=difftime(current_time, last_call_time);
 
-	
+
 	//Output to the file and to the console
 	if (log_type=="image")
 	// For image log
 	{
 		log_filename=resultDir+str_img_name_withoutExtension+log_filename_end;
 		const char* log_filename_pointer = log_filename.c_str();
-		file_stream.open(log_filename_pointer, std::ios::app);	
-	
+		file_stream.open(log_filename_pointer, std::ios::app);
+
 
 		// If a non-empty log description provided, starting a new step
 		if (step_description!="" && records_number < Max_records)
@@ -89,20 +89,20 @@ int log_steps(std::string step_description, std::string log_type)
 			records_array[records_number]->step_description = step_description;
 			records_array[records_number]->start_time = current_time;
 			records_number++;
-			
-			
+
+
 			// Saving to file and displaying on screen
-			std::string output_string = str_current_time + "\t" + string_of_arrows(records_number-1) + "START:\t" + 
+			std::string output_string = str_current_time + "\t" + string_of_arrows(records_number-1) + "START:\t" +
 				step_description + ".";
 			file_stream << output_string << std::endl<<std::endl;
 			std::cout << output_string << std::endl<<std::endl;
-			
-			
+
+
 
 			//last_step_description=step_description;
 			//last_call_time=current_time;
 			//bl_started=true;
-			
+
 		}
 		else if (records_number > 0)
 		{
@@ -122,9 +122,9 @@ int log_steps(std::string step_description, std::string log_type)
 			else
 				sprintf (string_buffer, "%i s", secs_number);
 			str_elapsed_time=string_buffer;
-			
+
 			// Saving to file and displaying on screen
-			std::string output_string = str_current_time + "\t" + string_of_arrows(records_number-1) + "END:\t" + 
+			std::string output_string = str_current_time + "\t" + string_of_arrows(records_number-1) + "END:\t" +
 				records_array[records_number-1]->step_description + ".\tElapsed time: " + str_elapsed_time;
 			file_stream<< output_string << std::endl<<std::endl;
 			std::cout << output_string << std::endl<<std::endl;
@@ -133,9 +133,9 @@ int log_steps(std::string step_description, std::string log_type)
 
 			delete records_array[records_number-1];
 			records_number--;
-			
+
 		}
-				
+
 		// Closing file
 		file_stream.close();
 
@@ -152,8 +152,8 @@ int log_steps(std::string step_description, std::string log_type)
 			bl_clear_general_log=false;
 		}
 
-		file_stream.open(log_filename_pointer, std::ios::app);	
-	
+		file_stream.open(log_filename_pointer, std::ios::app);
+
 		// If a non-empty log description provided, starting a new step
 		if (step_description!="")
 		{
@@ -164,26 +164,13 @@ int log_steps(std::string step_description, std::string log_type)
 			//last_step_description=step_description;
 			//last_call_time=current_time;
 			//bl_started=true;
-		}	
+		}
 		// Closing file
 		file_stream.close();
 	}
-	
 
 	return(1);
-}
-
-
-
-
-/*
-// Overloading the function for a string stream
-int log_steps(stringstream step_description, string log_type)
-{
-	return log_steps(step_description.str(), log_type);
-}
-*/
-
+};
 
 
 // Creating tabulation characters for inlaid execution list elements

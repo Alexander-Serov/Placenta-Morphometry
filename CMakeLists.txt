@@ -5,13 +5,17 @@ cmake_minimum_required(VERSION 2.6)
 project(plac_morph)
 
 include_directories(.)
-set(EXECUTABLE_OUTPUT_PATH bin/${CMAKE_BUILD_TYPE})
-SET(CMAKE_CXX_FLAGS "-DUNICODE=1")
+set(EXECUTABLE_OUTPUT_PATH ${CMAKE_BUILD_TYPE})
+SET(CMAKE_CXX_FLAGS "-DUNICODE=1 -g")
 
-# Include X11 libraries (for Mac)
+# X11 and OpenGL related packages
+find_package(OpenGL REQUIRED)
+find_package(GLUT REQUIRED)
 find_package(X11 REQUIRED)
 link_libraries(${X11_LIBRARIES})
-include_directories(${X11_INCLUDE_DIR})
+include_directories( ${OPENGL_INCLUDE_DIRS}  ${GLUT_INCLUDE_DIRS} ${X11_INCLUDE_DIR} )
+#target_link_libraries(plac_morph ${OPENGL_LIBRARIES} ${GLUT_LIBRARY} )
+
 
 # # Static link of -libgcc and -libstdc++ libraries
 # set(CMAKE_EXE_LINKER_FLAGS " -static")
@@ -56,7 +60,7 @@ add_executable(
   core/dependency/tinythread.cpp
 )
 if(UNIX)
-	target_link_libraries(plac_morph GL GLU glut X11 pthread)
+	target_link_libraries(plac_morph ${OPENGL_LIBRARIES} ${GLUT_LIBRARY} ${X11_LIBRARIES})
   # -static-libgcc -static-libstdc++
 else()
 	target_link_libraries(plac_morph Advapi32 gdi32 user32 shell32 opengl32 glu32)
