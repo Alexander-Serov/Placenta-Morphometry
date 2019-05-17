@@ -14,7 +14,7 @@
 
 // Platform-specific commands
 #ifdef _WIN32
-	#include"direntvc.h"
+	#include<dirent.h>
 	#include"population_sacha\Log_steps.h"	
 	#include"population_sacha\Statistics_placenta.h"
 #elif __linux__

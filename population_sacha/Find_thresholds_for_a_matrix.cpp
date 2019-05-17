@@ -8,7 +8,7 @@
 // Platform-specific commands
 #ifdef _WIN32
 	#include"population_sacha\Log_steps.h"
-#elif __linux__
+#else
 	#include"population_sacha/Log_steps.h"
 #endif
 
@@ -35,19 +35,19 @@ VecF64 find_thresholds_for_a_matrix (const Mat2F64 &input_matrix, Mat2F64& absol
 	int left_boundary;
 	int right_boundary;
 	int number_of_maxima_found;
-	
+
 	double local_maximal_value;
 	double max_value;
 	double min_value;
 	double tmpFloat;
-	double bin_width; 
-		
+	double bin_width;
+
 	Mat2F64 histogram_larger;
 
 	std::stringstream str_stream;
-	
+
 	VecI32 positions_of_local_maxima;
-	
+
 	VecF64 histogram;
 	VecF64 segmentation_thresholds_locations;
 	VecF64 selected_maxima_locations;
@@ -64,7 +64,7 @@ VecF64 find_thresholds_for_a_matrix (const Mat2F64 &input_matrix, Mat2F64& absol
 	selected_maxima_values = VecF64 (3, -1);		// Initialize the vector with -1
 	segmentation_thresholds_locations = VecF64 (2, -1);		// Initialize the vector with -1
 
-	
+
 	// Calculating a relative normalized histogram
 	histogram = matrix_histogram(input_matrix, min_value, max_value, bin_width);		// A histogram is just a vector
 
@@ -76,14 +76,14 @@ VecF64 find_thresholds_for_a_matrix (const Mat2F64 &input_matrix, Mat2F64& absol
 		// Determining the boundaries of the neighboring region
 		left_boundary = (i-half_local_interval)>=0 ? (i-half_local_interval) : 0;
 		right_boundary = (i+half_local_interval)<histogram_bins_number ? (i+half_local_interval) : (histogram_bins_number-1);
-		
+
 		local_maximal_value=histogram(left_boundary);
 		for (j=left_boundary+1; j<=right_boundary; j++)		// Analyzing the values of the neighbors
 		{
 			local_maximal_value=local_maximal_value < histogram(j) ? histogram(j) : local_maximal_value;
 		}
 
-		if (local_maximal_value==histogram(i)) 
+		if (local_maximal_value==histogram(i))
 		{
 			positions_of_local_maxima(number_of_maxima_found)=i;	// Saving the position of the local maxium
 			values_of_local_maxima(number_of_maxima_found++) = local_maximal_value;	// Saving the value of the local maxium and increasing the number of found maxima
@@ -173,17 +173,17 @@ VecF64 matrix_histogram (const Mat2F64& input_matrix, double& min_value, double&
 {
 	// Declaration
 	double current_value;
-	
+
 	int current_bin_number;
 	int i;
 	// int indice;
 	int j;
-	
+
 	VecF64 histogram;
 
-	
+
 	log_steps("Calculating a histogram");
-	
+
 
 	// Initialization
 	histogram = VecF64(histogram_bins_number, 0);		// Initializing the histogram with 0s
@@ -207,7 +207,7 @@ VecF64 matrix_histogram (const Mat2F64& input_matrix, double& min_value, double&
 		}
 	}
 
-	
+
 	log_steps();
 	return histogram;
 }

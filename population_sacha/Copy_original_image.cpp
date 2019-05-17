@@ -2,13 +2,15 @@
 
 #include <string>		// std::string
 #include <sstream>		// std::stringstream
+#include <cstdlib>		// for `system`
+
 #include "Global_variables.h"
 
 
 // Platform-specific commands
 #ifdef _WIN32
 	#define SHELL_COPY_COMMAND "copy"
-#elif __linux__
+#else
 	#define SHELL_COPY_COMMAND "cp"
 #endif
 

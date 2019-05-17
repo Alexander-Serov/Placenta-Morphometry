@@ -1,3 +1,22 @@
+# Project-specific
+CImg.h
+CMakeCache.txt
+CMakeFiles/
+Makefile
+cmake_install.cmake
+in/
+test
+*.jpg
+_archive
+file
+image
+README
+log.dat
+populationapp.pro
+populationcore.pri
+
+
+
 # Prerequisites
 *.d
 
@@ -30,3 +49,8 @@
 *.exe
 *.out
 *.app
+plac_morph
+General_execution_log.txt
+.vscode/
+build/
+results/

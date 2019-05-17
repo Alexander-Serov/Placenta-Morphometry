@@ -1,47 +1,11 @@
 
 #include "Global_variables.h"
 #include "Population.h"
+#include "core/algorithm/GeometricalTransformation.h"
 #include <string>
 #include "Small_functions.h"
 
 
-// Platform-specific commands
-#ifdef _WIN32
-	#include"population_sacha\Log_steps.h"	
-	/*
-	#include"direntvc.h"
-	#include <direct.h>
-    #define getcwd _getcwd
-	#include"population_sacha\Create_dot_finished_file.h"
-	#include"population_sacha\Discriminate_capillaries_from_IVS.h"
-	#include"population_sacha\Fill_holes_in_the_villi.h"
-	#include"population_sacha\Initial_segmentation.h"	
-	#include"population_sacha\Load_placenta_picture.h"
-	#include"population_sacha\Remove_noise.h"	
-	#include"population_sacha\Statistics_placenta.h"
-	#define DIRECTORY_SEPARATOR "\\"
-	#define DIRECTORY_SEPARATOR_SEARCH "/\\"
-	#define SHELL_COPY_COMMAND "copy"
-//	#define DEFAULT_RESULTS_DIRECTORY ".//results//"
-	*/
-#elif __linux__
-	#include"population_sacha/Log_steps.h"
-	/*
-	#include"dirent.h"
-	#include"unistd.h"
-	#include"population_sacha/Create_dot_finished_file.h"	
-	#include"population_sacha/Discriminate_capillaries_from_IVS.h"
-	#include"population_sacha/Fill_holes_in_the_villi.h"
-	#include"population_sacha/Initial_segmentation.h"
-	#include"population_sacha/Load_placenta_picture.h"
-	#include"population_sacha/Remove_noise.h"	
-	#include"population_sacha/Statistics_placenta.h"	
-	#define DIRECTORY_SEPARATOR "/"
-	#define DIRECTORY_SEPARATOR_SEARCH "/"
-	#define SHELL_COPY_COMMAND "cp"
-//	#define DEFAULT_RESULTS_DIRECTORY ".\results\"
-	*/
-#endif
 
 
 
@@ -63,7 +27,7 @@ void perimeter(VecF64 &perimeter, Mat2UI32 &label)
 	log_steps("Getting the perimeter");
 	//cout<<endl<<"start: Perimeter"<<endl;
 	time_t tbegin, tend;
-	double texec=0.;	
+	double texec=0.;
 	//start timer
 	tbegin=time(NULL);
 
@@ -103,13 +67,13 @@ void perimeter(VecF64 &perimeter, Mat2UI32 &label)
 
 
 
-void decideContourisObject(Mat2UI8 &contour, Mat2UI32 label_contour, Mat2UI8 &img_original, unsigned char colorObjet, 
+void decideContourisObject(Mat2UI8 &contour, Mat2UI32 label_contour, Mat2UI8 &img_original, unsigned char colorObjet,
 						   float perEdge, float thresholdArea, bool considerInOutsideContour, string resultDir)
 {
 	log_steps("Decision making (?)");
 	//cout<<endl<<"start: Decision"<<endl;
 	time_t tbegin, tend;
-	double texec=0.;	
+	double texec=0.;
 	//start timer
 	tbegin=time(NULL);
 
@@ -123,7 +87,7 @@ void decideContourisObject(Mat2UI8 &contour, Mat2UI32 label_contour, Mat2UI8 &im
 			}
 		}
 	}
-	
+
 	Mat2RGBUI8 rgb = pop::Visualization::labelToRandomRGB(label_contour);
 	//saveFileColor(rgb, resultDir, string_output_picutre_number()+"201.png");
 
@@ -155,7 +119,7 @@ void decideContourisObject(Mat2UI8 &contour, Mat2UI32 label_contour, Mat2UI8 &im
 			}
 		}
 	}
-	
+
 	float perIVS, perVilli, perGRinside, perGRoutside, perObjet;
 	VecI32 label_contour_is_Objet(length_label_contour);
 	for(int i=0;i<length_label_contour;i++)
@@ -166,7 +130,7 @@ void decideContourisObject(Mat2UI8 &contour, Mat2UI32 label_contour, Mat2UI8 &im
 		perGRoutside = (float) nbGRoutside(i)/areaContour(i);
 
 		if (colorObjet==int_white_pixel_color)	perObjet=perIVS;
-		else if (colorObjet==int_black_pixel_color)	perObjet=perVilli; 
+		else if (colorObjet==int_black_pixel_color)	perObjet=perVilli;
 		else if (colorObjet==int_maternal_RBCs_pixel_color) perObjet=perGRoutside;// GR outside
 		else if (colorObjet==int_fetal_RBCs_pixel_color) perObjet=perGRinside; // GR inside
 		else cout<<"Error: this object doesn't exist!"<<endl;
@@ -208,7 +172,7 @@ void decideContourisObject(Mat2UI8 &contour, Mat2UI32 label_contour, Mat2UI8 &im
 			}
 		}
 	}
-	
+
 	label_contour=Processing::clusterToLabel(contour,0);
 	rgb = pop::Visualization::labelToRandomRGB(label_contour);
 	//saveFileColor(rgb, resultDir, string_output_picutre_number()+"202.png");
@@ -223,7 +187,7 @@ void decideContourisObject(Mat2UI8 &contour, Mat2UI32 label_contour, Mat2UI8 &im
 }
 
 // Conditionally replacing one color by another. Condition: surface area
-void conditionally_replace_color_1_by_color_2(Mat2UI8 &img_original, unsigned char old_color, unsigned char new_color, 
+void conditionally_replace_color_1_by_color_2(Mat2UI8 &img_original, unsigned char old_color, unsigned char new_color,
 						   float area_threshold)
 {
 	// Declaration
@@ -262,7 +226,7 @@ void conditionally_replace_color_1_by_color_2(Mat2UI8 &img_original, unsigned ch
 	number_of_labels = pop::Analysis::maxValue (region_labels)+1;	// Including the label 0
 	region_areas = pop::Analysis::areaByLabel (region_labels);	// Calculate the area according to region_labels. Areas are counted from 1. Very confusing
 
-	
+
 	// Marking the labels that should be replaced by analyzing regions areas
 	bl_labels_to_replace = VecI32 (number_of_labels, false);
 	for (label=1; label<number_of_labels; label++)
@@ -270,7 +234,7 @@ void conditionally_replace_color_1_by_color_2(Mat2UI8 &img_original, unsigned ch
 		if (region_areas(label-1) < area_threshold)		// -1 because label 1 is the 0-th element
 			bl_labels_to_replace(label)=true;
 	}
-	
+
 
 	// Replacing the color in the original image
 	for(int i=0;i<img_original.sizeI();i++)
@@ -293,7 +257,7 @@ void conditionally_replace_color_1_by_color_2(Mat2UI8 &img_original, unsigned ch
 void labelObjet(Mat2RGBUI8& img_colored_regions, const Mat2UI32& img_labeled_regions, int textSize, int position_start)
 {
 	log_steps("Labeling objects");
-	
+
 	int nb, X_c, Y_c;
 	float Somme_X,Somme_Y;
 	char* chr_pnt_label = new char[FILENAME_LENGTH];
@@ -336,9 +300,9 @@ void labelObjet(Mat2RGBUI8& img_colored_regions, const Mat2UI32& img_labeled_reg
 	{
 
 		sprintf(chr_pnt_label,"%i",current_label+position_start);
-		Draw::text(img_colored_regions, chr_pnt_label, 
+		Draw::text(img_colored_regions, chr_pnt_label,
 			Vec2I32(regions_centers_i[current_label]/regions_areas[current_label],
-				regions_centers_j[current_label]/regions_areas[current_label]), 
+				regions_centers_j[current_label]/regions_areas[current_label]),
 			label_color, textSize);
 
 	}
@@ -352,18 +316,32 @@ void labelObjet(Mat2RGBUI8& img_colored_regions, const Mat2UI32& img_labeled_reg
 	log_steps();
 }
 
+void restoreRotation(pop::Mat2UI8 &img)
+{
+// Restore image rotation before saving to make it correspond to the input
+	img = pop::GeometricalTransformation::mirror(img, 0);
+	img = pop::GeometricalTransformation::rotateMultPi_2(img, -1);
+}
+
+void restoreRotation(pop::Mat2RGBUI8 &img)
+{
+// Restore image rotation before saving to make it correspond to the input
+	img = pop::GeometricalTransformation::mirror(img, 0);
+	img = pop::GeometricalTransformation::rotateMultPi_2(img, -1);
+}
+
  void saveFileBinary(pop::Mat2UI8 img, std::string fileDirectory, std::string fileName)
  {
 	 // Rescaling the binary picture to 255 at the maximum and zero at the minimum
 	 int min_value = pop::Analysis::minValue(img);
 	 int max_value = pop::Analysis::maxValue(img);
-	 
+
 	 if (min_value > 0 && min_value != max_value)
 		 img -= min_value;
 
 	 if (max_value != min_value && max_value-min_value < 255)
 		 img *= 255/(max_value-min_value);
-	 
+
 	 // Preparing the save path
 	 stringstream ss_tmp;
 	 string s_tmp;
@@ -374,10 +352,11 @@ void labelObjet(Mat2RGBUI8& img_colored_regions, const Mat2UI32& img_labeled_reg
 	 tmpStr[s_tmp.size()] = '\0';
 
 	 // Saving
+	 restoreRotation(img);
 	 img.save(tmpStr);
  }
 
- void saveFileColor(const Mat2RGBUI8 &img, const string fileDirectory, const string fileName)
+ void saveFileColor(pop::Mat2RGBUI8 img, const string fileDirectory, const string fileName)
  {
 	 stringstream ss_tmp;
 	 string s_tmp;
@@ -386,6 +365,8 @@ void labelObjet(Mat2RGBUI8& img_colored_regions, const Mat2UI32& img_labeled_reg
 	 s_tmp=ss_tmp.str();
 	 copy(s_tmp.begin(), s_tmp.end(), tmpStr);
 	 tmpStr[s_tmp.size()] = '\0';
+
+	 restoreRotation(img);
 	 img.save(tmpStr);
  }
 
@@ -406,6 +387,8 @@ void labelObjet(Mat2RGBUI8& img_colored_regions, const Mat2UI32& img_labeled_reg
 	 s_tmp=ss_tmp.str();
 	 copy(s_tmp.begin(), s_tmp.end(), tmpStr);
 	 tmpStr[s_tmp.size()] = '\0';
+
+	 restoreRotation(color_image);
 	 color_image.save(tmpStr);
  }
 
@@ -434,13 +417,13 @@ void labelObjet(Mat2RGBUI8& img_colored_regions, const Mat2UI32& img_labeled_reg
 
 
 
-	for (i=0; i< histogram.sizeJ(); i++)			
+	for (i=0; i< histogram.sizeJ(); i++)
 	{
 		file_stream << histogram(0,i)	<<	"\t";
 	}
 	file_stream	<<	"\n";
 
-	for (i=0; i< histogram.sizeJ(); i++)			
+	for (i=0; i< histogram.sizeJ(); i++)
 	{
 		file_stream << histogram(1,i)	<<	"\t";
 	}
@@ -448,14 +431,14 @@ void labelObjet(Mat2RGBUI8& img_colored_regions, const Mat2UI32& img_labeled_reg
 	file_stream.close();
 
 	log_steps();
-	 
+
 
 
  }
 
  void colorize_image(Mat2RGBUI8 &img_color, const Mat2UI8 &img)
 {
-	
+
 	for(int i=0;i<img.sizeI();i++)
 	{
 		for(int j=0;j<img.sizeJ();j++)
@@ -545,7 +528,7 @@ void labelToRGB(Mat2RGBUI8 &img, Mat2UI32 &label)
 	log_steps("Labeling the image to the RGB format");
 	//cout<<endl<<"start: label an image to RGB format"<<endl;
 	time_t tbegin, tend;
-	double texec=0.;	
+	double texec=0.;
 	//start timer
 	tbegin=time(NULL);
 
@@ -597,7 +580,7 @@ void ordreContour(Mat2UI32 &label_region, vector <vector <int> > &x, vector <vec
 	log_steps("Extracting contours");
 	//cout<<endl<<"start: extract contour"<<endl;
 	time_t tbegin, tend;
-	double texec=0.;	
+	double texec=0.;
 	//start timer
 	tbegin=time(NULL);
 
@@ -610,14 +593,14 @@ void ordreContour(Mat2UI32 &label_region, vector <vector <int> > &x, vector <vec
 		}
 	}
 	Mat2UI32 order(2,15);
-	order(0,0)=-1; order(0,1)=0; order(0,2)=1; order(0,3)=1; order(0,4)=1; order(0,5)=0; order(0,6)=-1; order(0,7)=-1; order(0,8)=-1; order(0,9)=0; order(0,10)=1; order(0,11)=1; order(0,12)=1; order(0,13)=0; order(0,14)=-1; 
-	order(1,0)=-1; order(1,1)=-1; order(1,2)=-1; order(1,3)=0; order(1,4)=1; order(1,5)=1; order(1,6)=1; order(1,7)=0; order(1,8)=-1; order(1,9)=-1; order(1,10)=-1; order(1,11)=0; order(1,12)=1; order(1,13)=1; order(1,14)=1; 
-	
+	order(0,0)=-1; order(0,1)=0; order(0,2)=1; order(0,3)=1; order(0,4)=1; order(0,5)=0; order(0,6)=-1; order(0,7)=-1; order(0,8)=-1; order(0,9)=0; order(0,10)=1; order(0,11)=1; order(0,12)=1; order(0,13)=0; order(0,14)=-1;
+	order(1,0)=-1; order(1,1)=-1; order(1,2)=-1; order(1,3)=0; order(1,4)=1; order(1,5)=1; order(1,6)=1; order(1,7)=0; order(1,8)=-1; order(1,9)=-1; order(1,10)=-1; order(1,11)=0; order(1,12)=1; order(1,13)=1; order(1,14)=1;
+
 	int maxLabel=pop::Analysis::maxValue(label_region), nb, m, startPoint=0;// m: indice of matrix order;
 	int i, j, a, b, c, d, e, f, g, h;
 
 	for(int label=1;label<=maxLabel;label++)
-	{		
+	{
 		startPoint=0;
 		for(int p=1;p<img_enlarge.sizeI()-1;p++)
 		{
@@ -634,10 +617,10 @@ void ordreContour(Mat2UI32 &label_region, vector <vector <int> > &x, vector <vec
 		}
 		extraction:
 		while(img_enlarge(i,j)==label)
-		{																									
+		{
 			x[label-1].push_back(i-1);
 			y[label-1].push_back(j-1);
-			img_enlarge(i,j)=0;			
+			img_enlarge(i,j)=0;
 			nb=0;
 			m=0;
 			a=(img_enlarge(i-1,j-1)==label);
@@ -682,10 +665,10 @@ void ordreContour(Mat2UI32 &label_region, vector <vector <int> > &x, vector <vec
 						nb+=1;
 					}
 					m+=1;
-				}	
+				}
 				startPoint+=1;
 			}
-			
+
 		}
 	}
 
@@ -744,7 +727,7 @@ pop::Mat2UI8 invertBinaryImage(pop::Mat2UI8 image)
 {
 	int size_i(image.sizeI());
 	int size_j(image.sizeJ());
-	
+
 	for (int i=0; i<size_i; i++)
 		for (int j=0; j<size_j; j++)
 			image(i,j)=image(i,j)>0 ? int_black_pixel_color : int_white_pixel_color;

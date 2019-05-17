@@ -61,6 +61,7 @@ bool read_next_image (	char* fileInDir,
 
 		// If the current directory entry is not a file, skip it
 		if (img_name.length()<=4) continue;
+		if (img_name.at(0) == '.') continue;
 		
 		// If the next file doesn't suit us, restart the while cycle and look for a new picture
 		if( !load_placenta_picture(img_name_withoutExtension, img_name, img_In, lock, extension, fileInDir, 
