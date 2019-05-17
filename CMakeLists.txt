@@ -1,5 +1,7 @@
 cmake_minimum_required(VERSION 2.6)
 
+#SET(CMAKE_C_COMPILER gcc)
+#SET(CMAKE_CXX_COMPILER g++)
 
 #Déclaration du projet
 project(plac_morph)
@@ -8,13 +10,20 @@ include_directories(.)
 set(EXECUTABLE_OUTPUT_PATH ${CMAKE_BUILD_TYPE})
 SET(CMAKE_CXX_FLAGS "-DUNICODE=1 -g")
 
-# X11 and OpenGL related packages
-find_package(OpenGL REQUIRED)
-find_package(GLUT REQUIRED)
-find_package(X11 REQUIRED)
-link_libraries(${X11_LIBRARIES})
-include_directories( ${OPENGL_INCLUDE_DIRS}  ${GLUT_INCLUDE_DIRS} ${X11_INCLUDE_DIR} )
-#target_link_libraries(plac_morph ${OPENGL_LIBRARIES} ${GLUT_LIBRARY} )
+if (UNIX)
+    # X11 and OpenGL related packages
+    find_package(OpenGL REQUIRED)
+    find_package(GLUT REQUIRED)
+    find_package(X11 REQUIRED)
+    link_libraries(${X11_LIBRARIES})
+    include_directories( ${OPENGL_INCLUDE_DIRS}  ${GLUT_INCLUDE_DIRS} ${X11_INCLUDE_DIR} ./)
+    #target_link_libraries(plac_morph ${OPENGL_LIBRARIES} ${GLUT_LIBRARY} )
+else()
+    find_package(OpenGL REQUIRED)
+    include_directories( ${OPENGL_INCLUDE_DIRS} ./)
+    # target_link_libraries(plac_morph ${OPENGL_LIBRARIES})
+endif()
+
 
 
 # # Static link of -libgcc and -libstdc++ libraries

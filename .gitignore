@@ -46,6 +46,5 @@ _archive
 plac_morph
 General_execution_log.txt
 .vscode/
-*.code-workspace
 build/
 results/
