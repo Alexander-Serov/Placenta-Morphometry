@@ -94,7 +94,9 @@ cout<<"It's a loop.";
 }*/
 	string defaultFolder= "";
 	defaultFolder= defaultFolder + mainDir + "results" + DIRECTORY_SEPARATOR;
+
 	copy(defaultFolder.begin(), defaultFolder.end(), resultDir);
+	resultDir[defaultFolder.size()] = '\0';
 
 //throw 20;
 
@@ -123,7 +125,7 @@ cout<<"It's a loop.";
 		//mkdir(resultDir);
 		ss_tmp.clear();
 		ss_tmp.str(string());
-		ss_tmp<<"mkdir "<<resultDir;
+		ss_tmp<<"mkdir \""<< resultDir << "\"";
 		s_tmp = ss_tmp.str();
 		copy(s_tmp.begin(), s_tmp.end(), tmpStr);
 		tmpStr[s_tmp.size()] = '\0';
@@ -131,6 +133,8 @@ cout<<"It's a loop.";
 	}
 
 	cout<<"Results are output into: "<<endl<<resultDir<<endl<<endl;
+
+	delete [] tmpStr;
 
 }
 

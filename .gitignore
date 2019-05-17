@@ -1,4 +1,4 @@
-
+# Project-specific
 CImg.h
 CMakeCache.txt
 CMakeFiles/
@@ -6,6 +6,10 @@ Makefile
 cmake_install.cmake
 in/
 test
+*.jpg
+_archive
+
+
 
 # Prerequisites
 *.d

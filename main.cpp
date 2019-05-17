@@ -34,7 +34,7 @@
 
 // Platform-specific commands
 #ifdef _WIN32
-	#include"direntvc.h"
+	#include<dirent.h>
 	#include <direct.h>
     // #define getcwd _getcwd
 	// #define DIRECTORY_SEPARATOR "\\"

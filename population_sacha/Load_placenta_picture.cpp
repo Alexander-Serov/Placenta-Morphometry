@@ -18,7 +18,7 @@
 
 // Platform-specific commands
 #ifdef _WIN32
-	#include"direntvc.h"
+	#include<dirent.h>
 #else
 	#include"dirent.h"
 #endif
