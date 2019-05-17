@@ -9,7 +9,7 @@
 
 // Platform-specific commands
 #ifdef _WIN32
-	#define DIRECTORY_SEPARATOR "\\"
+	#define DIRECTORY_SEPARATOR '\\'
 
 	// #include<dirent.h>		// For working with folders
 	#include<direct.h>			// For working with folders
@@ -20,7 +20,7 @@
 
 	*/
 #elif __linux__ || __APPLE__
-	#define DIRECTORY_SEPARATOR "/"
+	#define DIRECTORY_SEPARATOR '/'
 
 	#include"dirent.h"		// For working with folders
 	#include"unistd.h"		// Analog of <direct.h>
