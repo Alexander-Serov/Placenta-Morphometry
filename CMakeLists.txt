@@ -48,7 +48,7 @@ add_executable(
   ${source_files}
   main.cpp
   core/dependency/pugiconfig.hpp
-  core/dependency/CImg.h
+  CImg/CImg.h
   core/dependency/ConvertorCImg.h
   core/dependency/pugixml.hpp
   core/dependency/fparser.hh

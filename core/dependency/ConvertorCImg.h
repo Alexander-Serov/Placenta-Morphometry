@@ -35,7 +35,7 @@ in the Software.
 #define CONVERTORCIMG_H
 #include"core/data/mat/MatN.h"
 #include"core/algorithm/FunctionProcedureFunctorF.h"
-#include"core/dependency/CImg.h"
+#include"cImg/CImg.h"
 
 namespace pop
 {

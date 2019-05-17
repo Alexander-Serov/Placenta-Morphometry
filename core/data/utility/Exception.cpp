@@ -1,6 +1,6 @@
 #include"core/data/utility/Exception.h"
 #ifndef NOCIMG
-#include"core/dependency/CImg.h"
+#include"cImg/CImg.h"
 #endif
 namespace pop
 {

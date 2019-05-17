@@ -1,7 +1,7 @@
 #include"core/data/mat/MatNDisplay.h"
 
 #ifndef NOCIMG
-#include"core/dependency/CImg.h"
+#include"cImg/CImg.h"
 #endif
 namespace pop{
 
