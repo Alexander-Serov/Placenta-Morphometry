@@ -380,6 +380,12 @@ public:
      *
      *  Division mout(i)=v(i)/value
      */
+
+    // bool operator==(int);
+    // bool operator!=(int);
+
+    // bool Vec<Type>::operator==(const Vec<Type>& v, int m)
+
     Vec operator/(Type value)const;
     /*!
     * \param p norm (2=euclidean)
@@ -868,5 +874,38 @@ std::istream& operator >> (std::istream& in, pop::Vec<T1>& m){
     }
     return in;
 }
+/*
+Comparison with a constant. Return true only if all elements are equal to the constants
+
+template<typename Type>
+Vec<Type>&  Vec<Type>::operator+=(const Vec<Type>& v)
+{
+    POP_DbgAssert( this->size()==v.size());
+    std::transform(this->begin(),this->end(),v.begin(),this->begin(),std::plus<Type>());
+    return *this;
+}
+*/
+
+
+// template<typename Type>
+// bool Vec<Type>::operator==(int m){
+
+//     for(unsigned int j=0;j<this->size();j++)
+//     {
+//         if (this->operator ()(j) != m) return false;
+//     }
+//     return true;
+// }
+
+// template<typename Type>
+// bool Vec<Type>::operator!=(int m){
+
+//     // for(unsigned int j=0;j<this->size();j++)
+//     // {
+//     //     if (this->operator ()(j) != m) return false;
+//     // }
+//     return ~this->operator==(m);
+//}
+
 }
 #endif // Vec_H

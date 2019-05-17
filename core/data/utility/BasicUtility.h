@@ -194,8 +194,9 @@ public:
     \brief convert a string to any type
     \param s input string
     \param Dest output object (The insertion operator (<<) should be surcharged for the template class)
-    \return true success, false otherwise
-    *
+    Outdated: \return true success, false otherwise
+    Due to implementation issues, always return true
+        *
     * \code
     std::string str = "2.7";
     double d;
@@ -209,8 +210,9 @@ public:
     {
 
         std::istringstream iss(s );
+        iss >> Dest;
 
-        return iss >> Dest != 0;
+        return true;
     }
 
     /*!
