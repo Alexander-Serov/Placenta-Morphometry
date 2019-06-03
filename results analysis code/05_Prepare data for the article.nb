@@ -1,0 +1,480 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 10.2' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[     18208,        471]
+NotebookOptionsPosition[     17721,        450]
+NotebookOutlinePosition[     18078,        466]
+CellTagsIndexPosition[     18035,        463]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[BoxData[
+ RowBox[{
+  RowBox[{
+   RowBox[{"Clear", " ", "[", "\"\<Global`*\>\"", "]"}], ";"}], 
+  "\[IndentingNewLine]"}]], "Input",
+ CellChangeTimes->{{3.654807120541854*^9, 3.654807133967355*^9}}],
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"sectionName", "=", "\"\<2648\>\""}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"combinedResultsFolder", "=", 
+   RowBox[{
+   "\"\</Users/alexander_serov/Google Drive/Work/07_France (2012-2015)/06_New \
+cuts of the first sections/\>\"", "<>", "sectionName", "<>", 
+    "\"\</results/\>\""}]}], ";"}], "\[IndentingNewLine]"}], "Input",
+ CellChangeTimes->{{3.654807154881015*^9, 3.654807183090282*^9}, {
+  3.654808343436119*^9, 3.6548083679453077`*^9}, {3.654812644650885*^9, 
+  3.654812646086194*^9}}],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"(*", " ", 
+   RowBox[{"Importing", " ", "combined", " ", "data", " ", "files"}], " ", 
+   "*)"}], "\[IndentingNewLine]", "\[IndentingNewLine]", 
+  RowBox[{
+   RowBox[{
+    RowBox[{"generalStatisticsFileName", "=", 
+     RowBox[{
+     "\"\<_\>\"", "<>", "sectionName", "<>", 
+      "\"\<_Total_General_statistics.csv\>\""}]}], ";"}], 
+   "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"generalStatisticsData", "=", 
+     RowBox[{"Import", "[", 
+      RowBox[{"generalStatisticsFileName", ",", "\"\<table\>\"", ",", 
+       RowBox[{"{", 
+        RowBox[{"FieldSeparators", "\[Rule]", "\"\<;\>\""}], "}"}], ",", 
+       RowBox[{"HeaderLines", "\[Rule]", "0"}]}], "]"}]}], ";"}], 
+   "\[IndentingNewLine]", "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"villousRegionsFileName", "=", 
+     RowBox[{
+     "\"\<_\>\"", "<>", "sectionName", "<>", 
+      "\"\<_Total_Villous_regions_statistics.csv\>\""}]}], ";"}], 
+   "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"villousRegionsData", "=", 
+     RowBox[{"Import", "[", 
+      RowBox[{"villousRegionsFileName", ",", "\"\<table\>\"", ",", 
+       RowBox[{"{", 
+        RowBox[{"FieldSeparators", "\[Rule]", "\"\<;\>\""}], "}"}], ",", 
+       RowBox[{"HeaderLines", "\[Rule]", "0"}]}], "]"}]}], ";"}], 
+   "\[IndentingNewLine]", "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"fetalCapillariesFileName", "=", 
+     RowBox[{
+     "\"\<_\>\"", "<>", "sectionName", "<>", 
+      "\"\<_Total_Fetal_capillaries_statistics.csv\>\""}]}], ";"}], 
+   "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"fetalCapillariesData", "=", 
+     RowBox[{"Import", "[", 
+      RowBox[{"fetalCapillariesFileName", ",", "\"\<table\>\"", ",", 
+       RowBox[{"{", 
+        RowBox[{"FieldSeparators", "\[Rule]", "\"\<;\>\""}], "}"}], ",", 
+       RowBox[{"HeaderLines", "\[Rule]", "0"}]}], "]"}]}], ";"}]}]}]], "Input",\
+
+ CellChangeTimes->{{3.654807185085081*^9, 3.654807216106154*^9}, {
+  3.654807251190106*^9, 3.6548073681319237`*^9}, {3.654807583125373*^9, 
+  3.654807659374517*^9}, {3.654807697322653*^9, 3.654807743334128*^9}, {
+  3.654810323629691*^9, 3.654810362052185*^9}}],
+
+Cell[BoxData[
+ RowBox[{"\[IndentingNewLine]", "\[IndentingNewLine]"}]], "Input",
+ CellChangeTimes->{{3.654807395660486*^9, 3.6548073958268433`*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"(*", " ", 
+   RowBox[{
+   "Calculating", " ", "some", " ", "of", " ", "the", " ", "output", " ", 
+    "quantities"}], " ", "*)"}], "\[IndentingNewLine]", "\[IndentingNewLine]", 
+  RowBox[{
+   RowBox[{
+    RowBox[{"outputHeadersList", "=", 
+     RowBox[{"{", "}"}]}], ";"}], "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"outputValuesList", "=", 
+     RowBox[{"{", "}"}]}], ";"}], "\[IndentingNewLine]", 
+   "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"AppendTo", "[", 
+     RowBox[{"outputHeadersList", ",", " ", "\"\<Placental label\>\""}], 
+     "]"}], ";"}], "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"AppendTo", "[", 
+     RowBox[{"outputValuesList", ",", " ", "sectionName"}], "]"}], ";"}], 
+   "\[IndentingNewLine]", "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"totalAnalyzedAreaMM2", " ", "=", " ", 
+     RowBox[{
+      RowBox[{"Total", "[", 
+       RowBox[{"generalStatisticsData", "[", 
+        RowBox[{"[", 
+         RowBox[{
+          RowBox[{"2", ";;"}], ",", "3"}], "]"}], "]"}], "]"}], "/", 
+      SuperscriptBox["10", "6"]}]}], ";"}], "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"AppendTo", "[", 
+     RowBox[{
+     "outputHeadersList", ",", " ", 
+      "\"\<S_an, \!\(\*SuperscriptBox[\(mm\), \(2\)]\)\>\""}], "]"}], ";"}], 
+   "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"AppendTo", "[", 
+     RowBox[{"outputValuesList", ",", " ", "totalAnalyzedAreaMM2"}], "]"}], 
+    ";"}], "\[IndentingNewLine]", "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"allVilliAreaMM2", "=", " ", 
+     RowBox[{
+      RowBox[{"Total", "[", 
+       RowBox[{"villousRegionsData", "[", 
+        RowBox[{"[", 
+         RowBox[{
+          RowBox[{"2", ";;"}], ",", "2"}], "]"}], "]"}], "]"}], "/", 
+      SuperscriptBox["10", "6"]}]}], ";"}], "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"AppendTo", "[", 
+     RowBox[{
+     "outputHeadersList", ",", " ", 
+      "\"\<S_all villi, \!\(\*SuperscriptBox[\(mm\), \(2\)]\)\>\""}], "]"}], 
+    ";"}], "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"AppendTo", "[", 
+     RowBox[{"outputValuesList", ",", " ", "allVilliAreaMM2"}], "]"}], ";"}], 
+   "\[IndentingNewLine]", "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"allVilliDensity", "=", 
+     RowBox[{"allVilliAreaMM2", "/", "totalAnalyzedAreaMM2"}]}], ";"}], 
+   "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"AppendTo", "[", 
+     RowBox[{"outputHeadersList", ",", " ", "\"\<\[Phi]_all\>\""}], "]"}], 
+    ";"}], "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"AppendTo", "[", 
+     RowBox[{"outputValuesList", ",", " ", "allVilliDensity"}], "]"}], ";"}], 
+   "\[IndentingNewLine]", "\[IndentingNewLine]", 
+   RowBox[{"(*", " ", 
+    RowBox[{
+     RowBox[{"Strange", "!"}], " ", "The", " ", "villi", " ", "density", " ", 
+     "is", " ", "much", " ", "larger", " ", "than", " ", 
+     RowBox[{"expected", ".", " ", "But"}], " ", 
+     RowBox[{"let", "'"}], "s", " ", "continue", " ", "with", " ", "other", 
+     " ", "parameters"}], " ", "*)"}], "\[IndentingNewLine]", 
+   "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"smallVilliFractionInCrossSectionalArea", "=", "0.665"}], ";"}], 
+   "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"villiDensity", "=", 
+     RowBox[{"smallVilliFractionInCrossSectionalArea", "/", 
+      RowBox[{"(", 
+       RowBox[{"smallVilliFractionInCrossSectionalArea", "-", "1", "+", " ", 
+        RowBox[{"1", "/", "allVilliDensity"}]}], ")"}]}]}], ";"}], 
+   "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"AppendTo", "[", 
+     RowBox[{"outputHeadersList", ",", " ", "\"\<\[Phi]\>\""}], "]"}], ";"}], 
+   "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"AppendTo", "[", 
+     RowBox[{"outputValuesList", ",", " ", "villiDensity"}], "]"}], ";"}], 
+   "\[IndentingNewLine]", "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"IVSAreaMM2", " ", "=", " ", 
+     RowBox[{"totalAnalyzedAreaMM2", "-", "allVilliAreaMM2"}]}], ";"}], 
+   "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"AppendTo", "[", 
+     RowBox[{
+     "outputHeadersList", ",", " ", 
+      "\"\<S_IVS, \!\(\*SuperscriptBox[\(mm\), \(2\)]\)\>\""}], "]"}], ";"}], 
+   "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"AppendTo", "[", 
+     RowBox[{"outputValuesList", ",", " ", "IVSAreaMM2"}], "]"}], ";"}], 
+   "\[IndentingNewLine]", "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"IVSFraction", "=", " ", 
+     RowBox[{"IVSAreaMM2", " ", "/", "totalAnalyzedAreaMM2"}]}], ";"}], 
+   "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"AppendTo", "[", 
+     RowBox[{"outputHeadersList", ",", " ", "\"\<\[Phi]_IVS\>\""}], "]"}], 
+    ";"}], "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"AppendTo", "[", 
+     RowBox[{"outputValuesList", ",", " ", "IVSFraction"}], "]"}], ";"}], 
+   "\[IndentingNewLine]", "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"capillaryAreaMM2", "=", 
+     RowBox[{
+      RowBox[{"Total", "[", 
+       RowBox[{"fetalCapillariesData", "[", 
+        RowBox[{"[", 
+         RowBox[{
+          RowBox[{"2", ";;"}], ",", "2"}], "]"}], "]"}], "]"}], "/", 
+      SuperscriptBox["10", "6"]}]}], ";"}], "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"AppendTo", "[", 
+     RowBox[{
+     "outputHeadersList", ",", " ", 
+      "\"\<S_cap, \!\(\*SuperscriptBox[\(mm\), \(2\)]\)\>\""}], "]"}], ";"}], 
+   "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"AppendTo", "[", 
+     RowBox[{"outputValuesList", ",", " ", "capillaryAreaMM2"}], "]"}], ";"}],
+    "\[IndentingNewLine]", "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"capillaryFraction", "=", 
+     RowBox[{"capillaryAreaMM2", "/", "totalAnalyzedAreaMM2"}]}], ";"}], 
+   "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"AppendTo", "[", 
+     RowBox[{"outputHeadersList", ",", " ", "\"\<\[Phi]_cap\>\""}], "]"}], 
+    ";"}], "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"AppendTo", "[", 
+     RowBox[{"outputValuesList", ",", " ", "capillaryFraction"}], "]"}], 
+    ";"}], "\[IndentingNewLine]", "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"allVilliPerimeterM", "=", 
+     RowBox[{
+      RowBox[{"Total", "[", 
+       RowBox[{"villousRegionsData", "[", 
+        RowBox[{"[", 
+         RowBox[{
+          RowBox[{"2", ";;"}], ",", "3"}], "]"}], "]"}], "]"}], "/", 
+      SuperscriptBox["10", "6"]}]}], ";"}], "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"AppendTo", "[", 
+     RowBox[{"outputHeadersList", ",", " ", "\"\<P_all, m\>\""}], "]"}], 
+    ";"}], "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"AppendTo", "[", 
+     RowBox[{"outputValuesList", ",", " ", "allVilliPerimeterM"}], "]"}], 
+    ";"}], "\[IndentingNewLine]", "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"smallVilliFractionInPerimeter", "=", "0.773"}], ";"}], 
+   "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"smallVilliPerimeterM", "=", 
+     RowBox[{"allVilliPerimeterM", "*", "smallVilliFractionInPerimeter"}]}], 
+    ";"}], "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"AppendTo", "[", 
+     RowBox[{"outputHeadersList", ",", " ", "\"\<P_sm.v., m\>\""}], "]"}], 
+    ";"}], "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"AppendTo", "[", 
+     RowBox[{"outputValuesList", ",", " ", "smallVilliPerimeterM"}], "]"}], 
+    ";"}], "\[IndentingNewLine]", "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"allVilliSurfaceToAreaRatio", "=", 
+     RowBox[{"allVilliPerimeterM", "*", 
+      RowBox[{
+       SuperscriptBox["10", "3"], "/", 
+       RowBox[{"(", 
+        RowBox[{"allVilliDensity", "*", "totalAnalyzedAreaMM2"}], ")"}]}]}]}],
+     ";"}], "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"AppendTo", "[", 
+     RowBox[{
+     "outputHeadersList", ",", " ", 
+      "\"\<\[CurlyEpsilon], \!\(\*SuperscriptBox[\(mm\), \(-1\)]\)\>\""}], 
+     "]"}], ";"}], "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"AppendTo", "[", 
+     RowBox[{"outputValuesList", ",", " ", "allVilliSurfaceToAreaRatio"}], 
+     "]"}], ";"}], "\[IndentingNewLine]", "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"effectiveRadiusMuM", "=", 
+     RowBox[{
+     "2", "*", "smallVilliFractionInCrossSectionalArea", "*", 
+      "allVilliDensity", "*", "totalAnalyzedAreaMM2", "*", 
+      RowBox[{
+       SuperscriptBox["10", "6"], "/", 
+       RowBox[{"(", 
+        RowBox[{"smallVilliPerimeterM", "*", 
+         SuperscriptBox["10", "6"]}], ")"}]}]}]}], ";"}], 
+   "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"AppendTo", "[", 
+     RowBox[{"outputHeadersList", ",", " ", "\"\<r_e, \[Mu]m\>\""}], "]"}], 
+    ";"}], "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"AppendTo", "[", 
+     RowBox[{"outputValuesList", ",", " ", "effectiveRadiusMuM"}], "]"}], 
+    ";"}], "\[IndentingNewLine]", "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"B", "=", "94"}], ";"}], "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"w", "=", 
+     RowBox[{"2.8", " ", 
+      SuperscriptBox["10", 
+       RowBox[{"-", "4"}]]}]}], ";"}], "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"\[Kappa]", "=", "0.35"}], ";"}], "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"oxygenExtractionTime", "=", 
+     RowBox[{"B", "*", "effectiveRadiusMuM", "*", 
+      RowBox[{
+       SuperscriptBox["10", 
+        RowBox[{"-", "6"}]], "/", 
+       RowBox[{"(", 
+        RowBox[{"2", " ", "w", " ", "\[Kappa]"}], ")"}]}]}]}], ";"}], 
+   "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"AppendTo", "[", 
+     RowBox[{"outputHeadersList", ",", " ", "\"\<\[Tau]_e, s\>\""}], "]"}], 
+    ";"}], "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"AppendTo", "[", 
+     RowBox[{"outputValuesList", ",", " ", "oxygenExtractionTime"}], "]"}], 
+    ";"}], "\[IndentingNewLine]", "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"L0", "=", 
+     RowBox[{"1.6", " ", 
+      SuperscriptBox["10", 
+       RowBox[{"-", "2"}]]}]}], ";"}], "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"u", "=", 
+     RowBox[{"6", " ", 
+      SuperscriptBox["10", 
+       RowBox[{"-", "4"}]]}]}], ";"}], "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"damkohlerNumber", "=", 
+     RowBox[{
+      RowBox[{"(", 
+       RowBox[{"2", " ", "w", " ", "\[Kappa]", " ", "L0"}], ")"}], "/", 
+      RowBox[{"(", 
+       RowBox[{"u", " ", "B", " ", 
+        RowBox[{"effectiveRadiusMuM", "/", 
+         SuperscriptBox["10", "6"]}]}], ")"}]}]}], ";"}], 
+   "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"AppendTo", "[", 
+     RowBox[{"outputHeadersList", ",", " ", "\"\<Da\>\""}], "]"}], ";"}], 
+   "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"AppendTo", "[", 
+     RowBox[{"outputValuesList", ",", " ", "damkohlerNumber"}], "]"}], ";"}], 
+   "\[IndentingNewLine]", "\[IndentingNewLine]", 
+   RowBox[{"(*", " ", 
+    RowBox[{"Show", " ", "combined", " ", "results"}], " ", "*)"}], 
+   "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"Transpose", "[", 
+     RowBox[{"{", 
+      RowBox[{"outputHeadersList", ",", " ", "outputValuesList"}], "}"}], 
+     "]"}], "//", "TableForm"}]}]}]], "Input",
+ CellChangeTimes->{{3.6548073971086407`*^9, 3.6548074892742367`*^9}, {
+   3.654807934038529*^9, 3.654807985580051*^9}, {3.654808119241487*^9, 
+   3.654808142212185*^9}, 3.6548081744445133`*^9, {3.6548082308286667`*^9, 
+   3.654808315730576*^9}, {3.65480936480331*^9, 3.654809379725704*^9}, {
+   3.654809454679599*^9, 3.654809463223937*^9}, {3.654809563487101*^9, 
+   3.654809637458028*^9}, {3.654809724865643*^9, 3.654809895630669*^9}, {
+   3.6548100627127438`*^9, 3.654810208395595*^9}, {3.6548102394752827`*^9, 
+   3.654810258628982*^9}, {3.654810372932582*^9, 3.654810472521328*^9}, {
+   3.654810549495799*^9, 3.6548105536734133`*^9}, {3.654810609742601*^9, 
+   3.65481071083031*^9}, {3.654810876019224*^9, 3.654810954676021*^9}, {
+   3.654811128869733*^9, 3.654811152513217*^9}, {3.6548112057920628`*^9, 
+   3.654811296412833*^9}, {3.654811403162746*^9, 3.654811518981536*^9}, {
+   3.6548116442658863`*^9, 3.6548117757429657`*^9}, {3.654811808678739*^9, 
+   3.6548119301743803`*^9}, {3.6548124773295183`*^9, 
+   3.6548125529266243`*^9}, {3.654812600925572*^9, 3.654812619935643*^9}}],
+
+Cell[BoxData[
+ TagBox[GridBox[{
+    {"\<\"Placental label\"\>", "\<\"2648\"\>"},
+    {"\<\"S_an, \\!\\(\\*SuperscriptBox[\\(mm\\), \\(2\\)]\\)\"\>", 
+     "290.23874`"},
+    {"\<\"S_all villi, \\!\\(\\*SuperscriptBox[\\(mm\\), \\(2\\)]\\)\"\>", 
+     "223.40764560000002`"},
+    {"\<\"\[Phi]_all\"\>", "0.7697375119530908`"},
+    {"\<\"\[Phi]\"\>", "0.6897308739329671`"},
+    {"\<\"S_IVS, \\!\\(\\*SuperscriptBox[\\(mm\\), \\(2\\)]\\)\"\>", 
+     "66.83109439999998`"},
+    {"\<\"\[Phi]_IVS\"\>", "0.2302624880469092`"},
+    {"\<\"S_cap, \\!\\(\\*SuperscriptBox[\\(mm\\), \\(2\\)]\\)\"\>", 
+     "15.873286560091998`"},
+    {"\<\"\[Phi]_cap\"\>", "0.05469044745746897`"},
+    {"\<\"P_all, m\"\>", "3.529619072`"},
+    {"\<\"P_sm.v., m\"\>", "2.728395542656`"},
+    {"\<\"\[CurlyEpsilon], \\!\\(\\*SuperscriptBox[\\(mm\\), \
+\\(-1\\)]\\)\"\>", "15.799007516151006`"},
+    {"\<\"r_e, \[Mu]m\"\>", "108.90362632639105`"},
+    {"\<\"\[Tau]_e, s\"\>", "52.22929017694265`"},
+    {"\<\"Da\"\>", "0.5105691954902163`"}
+   },
+   GridBoxAlignment->{
+    "Columns" -> {{Left}}, "ColumnsIndexed" -> {}, "Rows" -> {{Baseline}}, 
+     "RowsIndexed" -> {}},
+   GridBoxSpacings->{"Columns" -> {
+       Offset[0.27999999999999997`], {
+        Offset[2.0999999999999996`]}, 
+       Offset[0.27999999999999997`]}, "ColumnsIndexed" -> {}, "Rows" -> {
+       Offset[0.2], {
+        Offset[0.4]}, 
+       Offset[0.2]}, "RowsIndexed" -> {}}],
+  Function[BoxForm`e$, 
+   TableForm[BoxForm`e$]]]], "Output",
+ CellChangeTimes->{
+  3.654807461207769*^9, 3.654807990579205*^9, 3.654808143983067*^9, {
+   3.654808271746398*^9, 3.654808371158394*^9}, {3.654809626235332*^9, 
+   3.654809638952223*^9}, 3.654809775785638*^9, 3.654809875740056*^9, 
+   3.654810124172626*^9, 3.6548101576481733`*^9, 3.654810211132957*^9, 
+   3.654810431808673*^9, 3.6548104738443737`*^9, {3.654810633636167*^9, 
+   3.654810645853737*^9}, 3.654810679865206*^9, {3.654810931769847*^9, 
+   3.654810958521222*^9}, 3.654811157277706*^9, 3.654811242167342*^9, 
+   3.654811299665614*^9, 3.654811520951419*^9, {3.654811765563274*^9, 
+   3.654811777298408*^9}, 3.654812456255213*^9, {3.6548126259185457`*^9, 
+   3.654812648999789*^9}}]
+}, Open  ]]
+},
+WindowSize->{893, 603},
+WindowMargins->{{Automatic, 129}, {-144, Automatic}},
+FrontEndVersion->"10.2 for Mac OS X x86 (32-bit, 64-bit Kernel) (July 29, \
+2015)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[558, 20, 202, 5, 69, "Input"],
+Cell[763, 27, 547, 12, 169, "Input"],
+Cell[1313, 41, 2138, 51, 494, "Input"],
+Cell[3454, 94, 148, 2, 94, "Input"],
+Cell[CellGroupData[{
+Cell[3627, 100, 11898, 300, 2237, "Input"],
+Cell[15528, 402, 2177, 45, 486, "Output"]
+}, Open  ]]
+}
+]
+*)
+
+(* End of internal cache information *)
