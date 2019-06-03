@@ -13,7 +13,7 @@
 
 
 
-void output_statistics(//const char *resultDir, 
+void output_statistics(//const char *resultDir,
 					   //const std::string& str_img_name_withoutExtension,
 					   const int size_i,
 					   const int size_j,
@@ -42,15 +42,15 @@ void output_statistics(//const char *resultDir,
 	log_steps("Outputting statistics");
 	//file_txt<<"start: output statistics."<<endl<<"Past time: "<<time(NULL)-tbegin<<endl<<endl;
 	//time_t tStatistics=time(NULL);ion+string_output_picutre_number()+"_O
-	std::string str_general_statistics_filename=resultDir+str_img_name_withoutExtension + string_output_picutre_number() + 
+	std::string str_general_statistics_filename=resultDir+str_img_name_withoutExtension + string_output_picutre_number() +
 		"_General_statistics.csv";
-	std::string str_villous_regions_statistics_filename=resultDir+str_img_name_withoutExtension + string_output_picutre_number() + 
+	std::string str_villous_regions_statistics_filename=resultDir+str_img_name_withoutExtension + string_output_picutre_number() +
 		"_Villous_regions_statistics.csv";
-	std::string str_IVS_statistics_filename = resultDir+str_img_name_withoutExtension + string_output_picutre_number() + 
+	std::string str_IVS_statistics_filename = resultDir+str_img_name_withoutExtension + string_output_picutre_number() +
 		"_IVS_statistics.csv";
-	std::string str_fetal_capillaries_statistics_filename=resultDir+str_img_name_withoutExtension + string_output_picutre_number() + 
+	std::string str_fetal_capillaries_statistics_filename=resultDir+str_img_name_withoutExtension + string_output_picutre_number() +
 		"_Fetal_capillaries_statistics.csv";
-	
+
 	//std::string str_villous_regions_statistics_filename_total=resultDir+str_img_name_withoutExtension+"_statistic-region-total.csv";
 	//std::string str_fetal_capillaries_statistics_filename_total=resultDir+str_img_name_withoutExtension+"_statistic-GR-total.csv";
 	//std::string str_IVS_statistics_filename_total=resultDir+str_img_name_withoutExtension+"_statistic-IVS-total.csv";
@@ -60,7 +60,7 @@ void output_statistics(//const char *resultDir,
 	std::vector <float> perimeter_img_segment, area_img_segment,perimeter_GR_segment, area_GR_segment,perimeter_IVSinsideRegion_segment, area_IVSinsideRegion_segment, perimeter_IVS_outside_segment, area_IVS_outside_segment, perimeter_IVS_inside_segment, area_IVS_inside_segment;
 	float tmp_perimeter=0, tmp_area=0;
 	char *file_tmp = new char[FILENAME_LENGTH];
-							
+
 	//image
 	copy(str_general_statistics_filename.begin(), str_general_statistics_filename.end(), file_tmp);
 	file_tmp[str_general_statistics_filename.size()] = '\0';
@@ -68,7 +68,7 @@ void output_statistics(//const char *resultDir,
 	file_csv<<"Image height (µm);Image width (µm);Image area (µm²);Villi density (before processing);Villi density (after processing)"
 		<<std::endl;
 	file_csv<<size_i*Image_resolution<<";"<<size_j*Image_resolution<<";"<<
-		size_i*size_j*Image_resolution*Image_resolution<<";"<<1-percentage_of_IVS << villi_density <<std::endl;
+		size_i*size_j*Image_resolution*Image_resolution<<";"<<1-percentage_of_IVS<<";" << villi_density <<std::endl;
 	file_csv.close();
 
 	//Region and GR and IVS inside
@@ -98,7 +98,7 @@ void output_statistics(//const char *resultDir,
 		}
 		file_csv<<numberGRinsideRegion[i].size()<<";"<<tmp_area*Image_resolution*Image_resolution<<";"<<tmp_perimeter*Image_resolution
 			<<std::endl;
-								
+
 	}
 	file_csv.close();
 
@@ -107,7 +107,7 @@ void output_statistics(//const char *resultDir,
 	// IVS outside: consider IVS inside villi
 	copy(str_IVS_statistics_filename.begin(), str_IVS_statistics_filename.end(), file_tmp);
 	file_tmp[str_IVS_statistics_filename.size()] = '\0';
-	file_csv.open(file_tmp, std::ios::app);  
+	file_csv.open(file_tmp, std::ios::app);
 	file_csv<<"IVS region number;Surface (µm²);Perimeter (µm);Perimeter_contact (µm);Perimeter_frame (µm);Nb_Villi_Inside_Region;Surface_Villi_Inside_IVS (µm²);Perimeter_Villi_Inside_Region (µm)"
 		<<std::endl;
 	for(int i=0;i<varea_IVS_outside_segment.size();i++)
@@ -156,7 +156,7 @@ void output_statistics(//const char *resultDir,
 	}
 	file_csv.close();
 
-	
+
 
 	log_steps();		// End: "Outputting statistics"
 }
